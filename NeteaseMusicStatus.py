@@ -107,6 +107,8 @@ class NeteaseMusicStatus():
                         pass
                 except IndexError:
                     break
+        with open(self.outPut_path, 'w', encoding='utf-8') as outPutFile:
+            outPutFile.write('')
 
         print('time: ', self.last_update)
         print('song id:', self.currentSong)
@@ -254,6 +256,9 @@ class NeteaseMusicStatus():
                 if validInfo in ['setPosition', 'resume']:
                     self.setCurrentLrc(self.lastPosition)
                     self.outPutCurrentLrc()
+                if validInfo == 'exit':
+                    with open(self.outPut_path, 'w', encoding='utf-8') as outPutFile:
+                        outPutFile.write('')
         return False
 
     def start(self, interval=0.001):
