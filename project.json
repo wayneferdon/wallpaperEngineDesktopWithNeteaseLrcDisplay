@@ -1,0 +1,3682 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "[b]Official presets can only publish FLomka and Digidro, if someone puts out presets marked as CWAV, please inform me on Steam: FLomka or Discord: FLomka#0202. (Developed by RedFox)[/b]\n\n[h1]Update 1.9 Spotify Connect[/h1]\n\n[b] - Spotify Connect - [/b]\n— Added listening to your current track on Spotify.\n[img] https://i.imgur.com/HCMkHWp.gif [/img]\n[img] https://i.imgur.com/N72pjQa.gif [/img]\n— Use and change only what you need, complete freedom of action.\n[img] https://i.imgur.com/aQGpUgE.gif [/img]\n[img] https://i.imgur.com/UOONkq0.gif [/img]\n— Protection from NSFW content.\n[img] https://i.imgur.com/MhN5Q6e.gif [/img]\n— Hide on pause.\n[img]https://i.imgur.com/o1ymZyT.gif[/img]\n— Use the colors of the music.\n[img]https://i.imgur.com/Nao5zcj.gif[/img]\n— Use music colors on weather and text block (time, date, equalizer, particles in the future).[img]https://i.imgur.com/4a7vPec.gif[/img]\n\n[b] - New design menu - [/b]\n[img]https://i.imgur.com/1hILKOC.gif[/img]\n\nYou can always offer your improvements to us and we will certainly listen to you.\n[url=https://steamcommunity.com/workshop/filedetails/discussion/1509243786/2140840224668431912/]FaQ & Guide[/url]\nDeveloped by RedFox Inc.\n[url=discord.gg/KuNA3cu][img] https://i.imgur.com/eKVpVwd.png [/img][/url]\n\nYou can support me on:\n[url=paypal.me/FLomka][img] https://i.imgur.com/4wHcKGl.png [/img][/url][url=patreon.com/FLomka][img] https://i.imgur.com/S2CVIpa.png [/img][/url]",
+	"file" : "index.html",
+	"general" :
+	{
+		"localization" :
+		{
+			"en-us" :
+			{
+				"ui_alignment" : "Alignment",
+				"ui_background_mode" : "Wallpaper Mode",
+				"ui_background_mode_color" : "Color",
+				"ui_background_mode_img" : "Image",
+				"ui_background_mode_img_custom" : "Custom background",
+				"ui_background_mode_img_custom_fg" : "Custom foreground",
+				"ui_background_mode_img_size" : "Alignment",
+				"ui_background_mode_img_size_adapt" : "Adaptive",
+				"ui_background_mode_img_size_center" : "Center",
+				"ui_background_mode_img_size_fg" : "Alignment foreground",
+				"ui_background_mode_img_size_fill" : "Fill",
+				"ui_background_mode_img_size_repiat" : "Repeat",
+				"ui_background_mode_img_size_stretch" : "Strerch",
+				"ui_background_mode_slide" : "Slide show",
+				"ui_background_mode_slide_custom" : "Custom file directory",
+				"ui_background_mode_slide_rundom" : "Random order",
+				"ui_background_mode_slide_time" : "Time to change wallpaper",
+				"ui_background_mode_slide_time_10_min" : "10 min",
+				"ui_background_mode_slide_time_1_h" : "1 hour",
+				"ui_background_mode_slide_time_1_min" : "1 min",
+				"ui_background_mode_slide_time_30_min" : "30 min",
+				"ui_background_mode_slide_time_5_min" : "5 min",
+				"ui_background_mode_stand" : "Default wallpaper",
+				"ui_background_mode_video" : "Video",
+				"ui_background_mode_video_custom" : "Custom video",
+				"ui_background_mode_video_stand" : "Default video",
+				"ui_background_mode_video_text" : "<small>★Video must be in the WebM format.</small>",
+				"ui_background_mode_video_volume" : "Volume",
+				"ui_background_text" : "<hr><h4>●  Setting background</h4><hr>",
+				"ui_blur_gradient" : "Bluring chromo",
+				"ui_blur_size" : "Blur Size",
+				"ui_blur_spid" : "Speed chromo",
+				"ui_center" : "Center",
+				"ui_color" : "Color",
+				"ui_color_blur" : "Color Blur",
+				"ui_color_blur_type" : "Color Blur mode",
+				"ui_color_rhythm" : "Color rhythm",
+				"ui_color_type" : "Color mode",
+				"ui_color_type_chromo" : "Chromo",
+				"ui_color_type_gradient" : "Gradient",
+				"ui_color_type_mono" : "Static",
+				"ui_count" : "Count",
+				"ui_dir" : "Direction",
+				"ui_dir_x" : "Direction X",
+				"ui_dir_y" : "Direction Y",
+				"ui_disable" : "<span class='ugcDanger'>Disable</span>",
+				"ui_effect_blur" : "Coming Soon",
+				"ui_effect_bounce" : "Coming Soon",
+				"ui_effect_colorshift" : "Coming Soon",
+				"ui_effect_glitch" : "Coming Soon",
+				"ui_effect_hilight" : "Coming Soon",
+				"ui_effect_parcticl_dir_down" : "Down",
+				"ui_effect_parcticl_dir_downl" : "Down-left",
+				"ui_effect_parcticl_dir_downr" : "Down-right",
+				"ui_effect_parcticl_dir_l" : "Left",
+				"ui_effect_parcticl_dir_none" : "None",
+				"ui_effect_parcticl_dir_r" : "Right",
+				"ui_effect_parcticl_dir_up" : "Up",
+				"ui_effect_parcticl_dir_upl" : "Up-left",
+				"ui_effect_parcticl_dir_upr" : "Up-right",
+				"ui_effect_parcticl_form_custom" : "Custom",
+				"ui_effect_parcticl_form_custom_file" : "Custom Image",
+				"ui_effect_parcticl_form_round" : "Circle",
+				"ui_effect_parcticl_form_snow" : "Snow",
+				"ui_effect_parcticl_form_square" : "Square",
+				"ui_effect_parcticl_form_star" : "Star",
+				"ui_effect_parcticl_form_triangle" : "Triangle",
+				"ui_effect_parcticl_go" : "Direction straight",
+				"ui_effect_parcticl_line" : "🠞Lines",
+				"ui_effect_parcticl_line_color" : "Line color",
+				"ui_effect_parcticl_line_leght" : "Line lenght",
+				"ui_effect_parcticl_line_size" : "Line size",
+				"ui_effect_parcticl_line_transpent" : "Line transpent",
+				"ui_effect_parcticl_mirror" : "Mirror motion",
+				"ui_effect_parcticl_mode_move" : "Mode motion",
+				"ui_effect_parcticl_mode_move_in" : "In",
+				"ui_effect_parcticl_mode_move_out" : "Out",
+				"ui_effect_parcticl_move" : "🠞Particles motion",
+				"ui_effect_parcticl_music_bass" : "Bass",
+				"ui_effect_parcticl_music_mezzo_soprano" : "Mezzo Soprano",
+				"ui_effect_parcticl_music_soprano" : "Soprano",
+				"ui_effect_parcticl_music_speed" : "Movement of particles from music",
+				"ui_effect_parcticl_music_strengh" : "The influence of music",
+				"ui_effect_parcticl_music_tenor" : "Tenor",
+				"ui_effect_parcticl_music_tone" : "Frequency range",
+				"ui_effect_parcticl_random" : "Random opacity",
+				"ui_effect_parcticl_random_size" : "Random size",
+				"ui_effect_parcticl_random_speed" : "Random speed",
+				"ui_effect_parcticl_size" : "Particle size",
+				"ui_effect_parcticl_speed" : "Particle speed",
+				"ui_effect_parcticl_text" : "🠞Particles",
+				"ui_effect_text" : "<hr><h4>●  Setting effects</h4><hr>",
+				"ui_enable" : "<span class='ugcSuccess'>Enable</span>",
+				"ui_font" : "Font",
+				"ui_font_dir" : "File .ttf (.png)",
+				"ui_form" : "Figure",
+				"ui_gradient_color" : "Gradient color",
+				"ui_height" : "Height",
+				"ui_large" : "Large",
+				"ui_left" : "Left",
+				"ui_medium" : "Medium",
+				"ui_music_1_dir_2" : "2 side",
+				"ui_music_1_dir_in" : "In",
+				"ui_music_1_dir_out" : "Out",
+				"ui_music_1_low_round" : "Semicircle ",
+				"ui_music_1_size" : "Size",
+				"ui_music_1_text" : "----[Circle] 1----",
+				"ui_music_2_1_dot" : "1st dot",
+				"ui_music_2_2_dot" : "2d dot",
+				"ui_music_2_ball_text" : "<small>●  Balls settings</small>",
+				"ui_music_2_dot_in" : "In ring",
+				"ui_music_2_dot_out" : "Out ring",
+				"ui_music_2_dot_static" : "Static right",
+				"ui_music_2_in_ring" : "Show interior ring",
+				"ui_music_2_lenght" : "Distance from rings",
+				"ui_music_2_line_text" : "<small>●  Lines settings</small>",
+				"ui_music_2_mouse" : "Mouse set",
+				"ui_music_2_out_ring" : "Show external ring",
+				"ui_music_2_ring" : "Show ring",
+				"ui_music_2_smash_text" : "<small>●  Smoothing settings </small>",
+				"ui_music_2_stat_ring" : "Show static ring",
+				"ui_music_2_text" : "----[Circle] 2----",
+				"ui_music_3_dir_down" : "Vertical",
+				"ui_music_3_dir_up" : "Horizontal",
+				"ui_music_3_line" : "Line",
+				"ui_music_3_text" : "----[Line] 1----",
+				"ui_music_count" : "Numer bar",
+				"ui_music_monstercat_barWidth" : "Bar Width",
+				"ui_music_monstercat_double" : "Mirror repetition",
+				"ui_music_monstercat_reverse" : "Flip",
+				"ui_music_style" : "Style",
+				"ui_music_style_type" : "Typical",
+				"ui_music_style_up" : "Tops",
+				"ui_music_style_up_no_line" : "Non-line tops",
+				"ui_music_text" : "<hr><h4>●  Equalizer</h4><hr>",
+				"ui_music_type" : "Equalizer type",
+				"ui_music_type_0" : "None",
+				"ui_music_type_1" : "[Circle] 1",
+				"ui_music_type_2" : "[Circle] 2",
+				"ui_music_type_3" : "[Line] 1",
+				"ui_music_type_4" : "[MonsterCat]",
+				"ui_music_type_5" : "[Coming]",
+				"ui_music_type_6" : "[Coming]",
+				"ui_music_type_7" : "[Coming]",
+				"ui_music_type_8" : "[Coming]",
+				"ui_music_type_9" : "[Coming]",
+				"ui_note" : "<hr><h4>●  Note</h4><hr>",
+				"ui_note_inner" : "Text note",
+				"ui_off" : "Off",
+				"ui_posX" : "Position X",
+				"ui_posY" : "Position Y",
+				"ui_radius" : "Radius",
+				"ui_right" : "Right",
+				"ui_rounding" : "Rotation",
+				"ui_sens" : "Sensitivity",
+				"ui_setting_colortheme" : "Color theme Windows",
+				"ui_setting_text" : "<hr><h4>●  Setting</h4><hr><small>Setting theme Windows</small>",
+				"ui_size" : "Size",
+				"ui_small" : "Small",
+				"ui_smash" : "Smoothing",
+				"ui_space" : "Space",
+				"ui_spotify_artist" : "<b>Artist</b>",
+				"ui_spotify_blur" : "Blur border",
+				"ui_spotify_color_line" : "ProgressBar color",
+				"ui_spotify_color_line_type" : "ProgressBar color mode",
+				"ui_spotify_dark_color" : "Dark color",
+				"ui_spotify_darkness_color" : "Darkness color",
+				"ui_spotify_duration" : "<b>Duration</b>",
+				"ui_spotify_img" : "<b>Image album</b>",
+				"ui_spotify_label" : "<b>Title</b>",
+				"ui_spotify_light_color" : "Light color",
+				"ui_spotify_line" : "<b>ProgressBar</b>",
+				"ui_spotify_primal_color" : "Primal color",
+				"ui_spotify_progress" : "<b>Progress</b>",
+				"ui_spotify_protect" : "Expicit protect",
+				"ui_time_24" : "24 Hour",
+				"ui_time_date" : "Date",
+				"ui_time_date_format" : "Date format",
+				"ui_time_date_text" : "<small>★You can change date format manually <br />{DD} {MM} {YYYY}<br />{week} {wek} {month} {,}<br />For example:{month} {DD}<br />Результат: September 20</small>",
+				"ui_time_dot1" : "Dot flashing",
+				"ui_time_dot2" : "Colon flashing",
+				"ui_time_glitch_bg" : "Background glitches",
+				"ui_time_sec" : "Seconds",
+				"ui_time_text" : "<hr><h4>● Time settings</h4><hr>",
+				"ui_time_text_date" : "-----Date settings-----",
+				"ui_time_text_time" : "-----Clock settings-----",
+				"ui_time_time" : "Time",
+				"ui_time_type" : "Style clock",
+				"ui_time_type_classic" : "Classic",
+				"ui_time_type_digital" : "Digital",
+				"ui_time_type_glitch" : "Glitch",
+				"ui_time_type_slide" : "Slider",
+				"ui_transparency" : "Transparency",
+				"ui_weather_api" : "Primary APIkey",
+				"ui_weather_city" : "City",
+				"ui_weather_city_text" : "<small>City(zip-cod, ip, cordin) for example: Moscow</small>",
+				"ui_weather_fahrenheit" : "Fahrenheit",
+				"ui_weather_format" : "Weather format",
+				"ui_weather_format_text" : "<small>★You can change weather format manually <br />{city} {temp} {feels} {,}<br />{pressure} {wind} {winddir} {uv_index}<br />{weather} {precip} {humidity} {visibility}<br />For example: {temp}℃, feels {feels}℃ and now  {weather}<br />Result: 26℃, feels 24℃ and now Cloudy</small>",
+				"ui_weather_metric" : "Metric",
+				"ui_weather_scientific" : "Scientific",
+				"ui_weather_secondary_api" : "Secondary APIkey",
+				"ui_weather_slow_dis" : "Slow update: 2t/h",
+				"ui_weather_slow_en" : "Slow update: 1t/h",
+				"ui_weather_text" : "<hr><h4>●  Weather</h4><hr>",
+				"ui_weather_units" : "Units",
+				"ui_widht" : "Weight"
+			},
+			"ru-ru" :
+			{
+				"ui_alignment" : "Выравнивание",
+				"ui_background_mode" : "Режим обоев",
+				"ui_background_mode_img" : "Изображение",
+				"ui_background_mode_img_custom" : "Кастомный фон",
+				"ui_background_mode_img_custom_fg" : "Передний фон",
+				"ui_background_mode_img_size" : "Выравнивание",
+				"ui_background_mode_img_size_adapt" : "Адаптивно",
+				"ui_background_mode_img_size_center" : "Центр",
+				"ui_background_mode_img_size_fg" : "Выравнивание переднего фона",
+				"ui_background_mode_img_size_fill" : "Заполнить",
+				"ui_background_mode_img_size_repiat" : "Повтор",
+				"ui_background_mode_img_size_stretch" : "Растянуть",
+				"ui_background_mode_slide" : "Слайд шоу",
+				"ui_background_mode_slide_custom" : "Папка слайд шоу",
+				"ui_background_mode_slide_rundom" : "Случайный порядок",
+				"ui_background_mode_slide_time" : "Время смены обоев",
+				"ui_background_mode_slide_time_10_min" : "10 минут",
+				"ui_background_mode_slide_time_1_h" : "1 час",
+				"ui_background_mode_slide_time_1_min" : "1 минута",
+				"ui_background_mode_slide_time_30_min" : "30 минут",
+				"ui_background_mode_slide_time_5_min" : "5 минут",
+				"ui_background_mode_stand" : "Стандартные обои",
+				"ui_background_mode_video" : "Видео",
+				"ui_background_mode_video_custom" : "Кастомное видео",
+				"ui_background_mode_video_stand" : "Видео с мастерской",
+				"ui_background_mode_video_text" : "<small>★Видео должен быть форматом webm.</small>",
+				"ui_background_mode_video_volume" : "Громкость",
+				"ui_background_text" : "<hr><h4>●  Настройки фона</h4><hr>",
+				"ui_blur_gradient" : "Свечение градиента",
+				"ui_blur_size" : "Размер свечения",
+				"ui_blur_spid" : "Скорость переливания",
+				"ui_center" : "Центр",
+				"ui_color" : "Цвет",
+				"ui_color_blur" : "Цвет свечения",
+				"ui_color_blur_type" : "Цвет свечения",
+				"ui_color_rhythm" : "Цвет Rhythm",
+				"ui_color_type" : "Режим цвета",
+				"ui_color_type_chromo" : "Chromo",
+				"ui_color_type_gradient" : "Градиент",
+				"ui_color_type_mono" : "Статичный",
+				"ui_count" : "Количество",
+				"ui_dir" : "Направление",
+				"ui_dir_x" : "Направление X",
+				"ui_dir_y" : "Направление Y",
+				"ui_disable" : "<span class='ugcDanger'>Выключено</span>",
+				"ui_effect_blur" : "Coming Soon",
+				"ui_effect_bounce" : "Coming Soon",
+				"ui_effect_colorshift" : "Coming Soon",
+				"ui_effect_glitch" : "Coming Soon",
+				"ui_effect_hilight" : "Coming Soon",
+				"ui_effect_parcticl_dir_down" : "Вниз",
+				"ui_effect_parcticl_dir_downl" : "Вниз-влево",
+				"ui_effect_parcticl_dir_downr" : "Вниз-вправо",
+				"ui_effect_parcticl_dir_l" : "Влево",
+				"ui_effect_parcticl_dir_none" : "Нет",
+				"ui_effect_parcticl_dir_r" : "Вправо",
+				"ui_effect_parcticl_dir_up" : "Вверх",
+				"ui_effect_parcticl_dir_upl" : "Вверх-влево",
+				"ui_effect_parcticl_dir_upr" : "Вверх-вправо",
+				"ui_effect_parcticl_form_custom" : "Кастомное",
+				"ui_effect_parcticl_form_custom_file" : "Кастомное изобр.",
+				"ui_effect_parcticl_form_round" : "Круг",
+				"ui_effect_parcticl_form_snow" : "Снегопад",
+				"ui_effect_parcticl_form_square" : "Квадрат",
+				"ui_effect_parcticl_form_star" : "Звезда",
+				"ui_effect_parcticl_form_triangle" : "Треугольник",
+				"ui_effect_parcticl_go" : "Движение ровно",
+				"ui_effect_parcticl_line" : "🠞Линии",
+				"ui_effect_parcticl_line_color" : "Цвет линий",
+				"ui_effect_parcticl_line_leght" : "Длина линий",
+				"ui_effect_parcticl_line_size" : "Размер линий",
+				"ui_effect_parcticl_line_transpent" : "Прозрачность линий",
+				"ui_effect_parcticl_mirror" : "Зеркальное движение",
+				"ui_effect_parcticl_mode_move" : "Режим движения",
+				"ui_effect_parcticl_mode_move_in" : "Внутри",
+				"ui_effect_parcticl_mode_move_out" : "За экран",
+				"ui_effect_parcticl_move" : "🠞Движение частиц",
+				"ui_effect_parcticl_music_bass" : "Басс",
+				"ui_effect_parcticl_music_mezzo_soprano" : "Меццо Сопрано",
+				"ui_effect_parcticl_music_soprano" : "Сопрано",
+				"ui_effect_parcticl_music_speed" : "Движение частиц от музыки",
+				"ui_effect_parcticl_music_strengh" : "Влияние музыки",
+				"ui_effect_parcticl_music_tenor" : "Тенор",
+				"ui_effect_parcticl_music_tone" : "Диапазон частот",
+				"ui_effect_parcticl_random" : "Разброс прозрачности",
+				"ui_effect_parcticl_random_size" : "Разброс размера",
+				"ui_effect_parcticl_random_speed" : "Разброс скорости",
+				"ui_effect_parcticl_size" : "Размер частиц",
+				"ui_effect_parcticl_speed" : "Скорость",
+				"ui_effect_parcticl_text" : "🠞Частицы",
+				"ui_effect_text" : "<hr><h4>●  Настройка эффектов</h4><hr>",
+				"ui_enable" : "<span class='ugcSuccess'>Включено</span>",
+				"ui_font" : "Шрифт",
+				"ui_font_dir" : "File .ttf (.png)",
+				"ui_form" : "Форма",
+				"ui_gradient_color" : "Цвет градиент",
+				"ui_height" : "Высота",
+				"ui_large" : "Большой",
+				"ui_left" : "Слева",
+				"ui_medium" : "Средний",
+				"ui_music_1_dir_2" : "В обе стороны",
+				"ui_music_1_dir_in" : "Внутрь",
+				"ui_music_1_dir_out" : "Снаружи",
+				"ui_music_1_low_round" : "Полукруг",
+				"ui_music_1_size" : "Толщина секций",
+				"ui_music_1_text" : "----[Круг] 1----",
+				"ui_music_2_1_dot" : "Первая точка",
+				"ui_music_2_2_dot" : "Вторая точка",
+				"ui_music_2_ball_text" : "<small>●  Настройки  шаров</small>",
+				"ui_music_2_dot_in" : "Внутреннее кольцо",
+				"ui_music_2_dot_out" : "Внешенее кольцо",
+				"ui_music_2_dot_static" : "Статичное кольцо",
+				"ui_music_2_in_ring" : "Показывать внутреннее кольцо",
+				"ui_music_2_lenght" : "Растояние от колец",
+				"ui_music_2_line_text" : "<small>●  Настройки линий</small>",
+				"ui_music_2_mouse" : "Установка мышью",
+				"ui_music_2_out_ring" : "Показывать наружнее кольцо",
+				"ui_music_2_ring" : "Показывать кольцо",
+				"ui_music_2_smash_text" : "<small>●  Настройки плавности</small>",
+				"ui_music_2_stat_ring" : "Показывать статичное кольцо",
+				"ui_music_2_text" : "----[Круг] 2----",
+				"ui_music_3_dir_down" : "Вертикально",
+				"ui_music_3_dir_up" : "Горизонтально",
+				"ui_music_3_line" : "Линия",
+				"ui_music_3_text" : "----[Линия] 1----",
+				"ui_music_count" : "Количество секций",
+				"ui_music_monstercat_barWidth" : "Ширина делений",
+				"ui_music_monstercat_double" : "Зеркальное повторение",
+				"ui_music_monstercat_reverse" : "Перевернуть",
+				"ui_music_style" : "Стиль",
+				"ui_music_style_type" : "Типичный",
+				"ui_music_style_up" : "Вершины",
+				"ui_music_style_up_no_line" : "Вершины без линий",
+				"ui_music_text" : "<hr><h4>●  Эквалайзер</h4><hr>",
+				"ui_music_type" : "Тип эквалайзера",
+				"ui_music_type_0" : "Нет",
+				"ui_music_type_1" : "[Круг] 1",
+				"ui_music_type_2" : "[Круг] 2",
+				"ui_music_type_3" : "[Линия] 1",
+				"ui_music_type_4" : "[MonsterCat]",
+				"ui_music_type_5" : "[Coming]",
+				"ui_music_type_6" : "[Coming]",
+				"ui_music_type_7" : "[Coming]",
+				"ui_music_type_8" : "[Coming]",
+				"ui_music_type_9" : "[Coming]",
+				"ui_note" : "<hr><h4>●  Текст</h4><hr>",
+				"ui_note_inner" : "Текст",
+				"ui_off" : "Выключено",
+				"ui_posX" : "Позиция X",
+				"ui_posY" : "Позиция Y",
+				"ui_radius" : "Радиус",
+				"ui_right" : "Справа",
+				"ui_rounding" : "Вращение",
+				"ui_sens" : "Чувствительность",
+				"ui_setting_colortheme" : "Цветовая схема",
+				"ui_setting_text" : "<hr><h4>●  Настройки</h4><hr><small>Настройки темы Windows</small>",
+				"ui_size" : "Размер",
+				"ui_small" : "Маленький",
+				"ui_smash" : "Сглаживание",
+				"ui_space" : "Пропуск",
+				"ui_spotify_artist" : "<b>Исполнитель</b>",
+				"ui_spotify_blur" : "Свечение рамки",
+				"ui_spotify_color_line" : "Цвет шкалы времени",
+				"ui_spotify_color_line_type" : "Режим цвета шкалы времени",
+				"ui_spotify_dark_color" : "Темный цвет",
+				"ui_spotify_darkness_color" : "Темнее цвет",
+				"ui_spotify_duration" : "<b>Длительность</b>",
+				"ui_spotify_img" : "<b>Изображение альбома</b>",
+				"ui_spotify_label" : "<b>Название</b>",
+				"ui_spotify_light_color" : "Светлый цвет",
+				"ui_spotify_line" : "<b>Шкала времени</b>",
+				"ui_spotify_primal_color" : "Основной цвет",
+				"ui_spotify_progress" : "<b>Прошедшее время</b>",
+				"ui_spotify_protect" : "Защита 18+",
+				"ui_time_24" : "24-часа",
+				"ui_time_date" : "Дата",
+				"ui_time_date_format" : "Формат даты",
+				"ui_time_date_text" : "<small>★Формат даты можно прописать вручную <br />{DD} {MM} {YYYY} {,}<br />{week} {wek} {неделя} {нд}<br />{месяц}  {month}<br />Например:{месяц} {DD}<br />Результат: Сентябрь 20</small>",
+				"ui_time_dot1" : "Мигание точки",
+				"ui_time_dot2" : "Мигание двоеточего",
+				"ui_time_glitch_bg" : "Глюки заднего фона",
+				"ui_time_sec" : "Секунды",
+				"ui_time_text" : "<hr><h4>●  Настройки времени</h4><hr>",
+				"ui_time_text_date" : "------Настройка  даты------",
+				"ui_time_text_time" : "-----Настройка часов-----",
+				"ui_time_time" : "Время",
+				"ui_time_type" : "Стиль часов",
+				"ui_time_type_classic" : "Классические",
+				"ui_time_type_digital" : "Цифровые",
+				"ui_time_type_glitch" : "Глючные",
+				"ui_time_type_slide" : "Слайдеры",
+				"ui_transparency" : "Прозрачность",
+				"ui_weather_api" : "Основной APIkey",
+				"ui_weather_city" : "Город",
+				"ui_weather_city_text" : "<small>★Город(zip-cod, ip, cordin) должен быть на англ. например: Moscow</small>",
+				"ui_weather_fahrenheit" : "Фаренгейт",
+				"ui_weather_format" : "Формат погоды",
+				"ui_weather_format_text" : "<small>★Формат погоды можно прописать вручную <br />{city} {temp} {feels} {,}<br />{pressure} {wind} {winddir} {uv_index}<br />{weather} {precip} {humidity} {visibility}<br />Например: {temp}℃, по ощущениям {feels}℃ и сейчас {weather}<br />Результат: 26℃, по ощущениям 24℃ и сейчас Cloudy</small>",
+				"ui_weather_metric" : "Метрические",
+				"ui_weather_scientific" : "Научные",
+				"ui_weather_secondary_api" : "Дополнительный APIkey",
+				"ui_weather_slow_dis" : "Медленное обновление: 2р/ч",
+				"ui_weather_slow_en" : "Медленное обновление: 1р/ч",
+				"ui_weather_text" : "<hr><h4>●  Погода</h4><hr>",
+				"ui_weather_units" : "Единицы измерения",
+				"ui_widht" : "Ширина"
+			}
+		},
+		"properties" :
+		{
+			"BlurColorGradient" :
+			{
+				"condition" : "visual_audio_model.value == 1 && ColorMode.value == 2",
+				"order" : 60,
+				"text" : "ui_blur_gradient",
+				"type" : "bool",
+				"value" : true
+			},
+			"ColorMode" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"options" :
+				[
+					{
+						"condition" : "PWLinePosition.value == 1",
+						"label" : "ui_color_type_mono",
+						"value" : 1
+					},
+					{
+						"condition" : "PWLinePosition.value == 1",
+						"label" : "ui_color_type_gradient",
+						"value" : 2
+					},
+					{
+						"label" : "ui_color_type_chromo",
+						"value" : 3
+					}
+				],
+				"order" : 58,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"ColorRhythm" :
+			{
+				"condition" : "visual_audio_model.value == 1 && ColorMode.value == 3",
+				"order" : 61,
+				"text" : "ui_color_rhythm",
+				"type" : "bool",
+				"value" : true
+			},
+			"DateAlignment" :
+			{
+				"condition" : "showDate.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 160.90000000000001,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "right"
+			},
+			"DateBlurColor" :
+			{
+				"condition" : "showDate.value && DateColorRhythm.value != true",
+				"order" : 160.5,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "0.8 0.8 0.8"
+			},
+			"DateColor" :
+			{
+				"condition" : "showDate.value && DateColorRhythm.value != true",
+				"order" : 160.40000000000001,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"DateFormat" :
+			{
+				"condition" : "showDate.value",
+				"order" : 161,
+				"text" : "ui_time_date_format",
+				"type" : "textinput",
+				"value" : "{DD} {month} {YYYY}"
+			},
+			"DateSize" :
+			{
+				"condition" : "showDate.value",
+				"max" : 50,
+				"min" : 10,
+				"order" : 162,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 17
+			},
+			"DateX" :
+			{
+				"condition" : "showDate.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 163,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 59
+			},
+			"DateY" :
+			{
+				"condition" : "showDate.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 164,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 56
+			},
+			"DefaultWallpaper" :
+			{
+				"condition" : "wallpapermode.value == 1 || wallpapermode.value == 2",
+				"options" :
+				[
+					{
+						"label" : "[UltraHD]Mountains",
+						"value" : 1
+					},
+					{
+						"label" : "[2K+]Mountains 2",
+						"value" : 2
+					},
+					{
+						"label" : "[UltraHD]Nier Automata",
+						"value" : 3
+					},
+					{
+						"label" : "[FullHD]The Older I Get",
+						"value" : 4
+					},
+					{
+						"label" : "[HHQ]Fern",
+						"value" : 5
+					},
+					{
+						"label" : "[UltraHD]Sky",
+						"value" : 6
+					},
+					{
+						"label" : "[UltraHD]Sky 2",
+						"value" : 7
+					},
+					{
+						"label" : "[FullHD]Nakano",
+						"value" : 8
+					},
+					{
+						"label" : "[UltraHD]Guns Girl",
+						"value" : 9
+					},
+					{
+						"label" : "[2K]桜 吹雪 の 中",
+						"value" : 10
+					},
+					{
+						"label" : "[2K]Wlop 1",
+						"value" : 11
+					},
+					{
+						"label" : "[4K]Wlop 2",
+						"value" : 12
+					},
+					{
+						"label" : "[2K]Wlop 3",
+						"value" : 13
+					},
+					{
+						"label" : "[UltraHD]Wlop 4",
+						"value" : 14
+					},
+					{
+						"label" : "[UltraHD]Wlop 5",
+						"value" : 15
+					},
+					{
+						"label" : "[FullHD]Wlop 6",
+						"value" : 16
+					},
+					{
+						"label" : "[FullHD]Wlop 7",
+						"value" : 17
+					},
+					{
+						"label" : "[UltraHD]Wlop 8",
+						"value" : 18
+					},
+					{
+						"label" : "[UltraHD]Wlop 9",
+						"value" : 19
+					},
+					{
+						"label" : "[UltraHD]Mountains 3",
+						"value" : 21
+					},
+					{
+						"label" : "[4K+]El Capitan",
+						"value" : 22
+					},
+					{
+						"label" : "[4K+]Forest",
+						"value" : 23
+					},
+					{
+						"label" : "[4K+]Forest 2",
+						"value" : 24
+					},
+					{
+						"label" : "[4K+]Landscape",
+						"value" : 25
+					},
+					{
+						"label" : "[4K+]Black Mountains",
+						"value" : 26
+					},
+					{
+						"label" : "[4K+]Black Mountains 2",
+						"value" : 27
+					},
+					{
+						"label" : "[4K+]Landscape 2",
+						"value" : 28
+					},
+					{
+						"label" : "[4K+]Forest 3",
+						"value" : 29
+					}
+				],
+				"order" : 11.5,
+				"text" : "ui_background_mode_stand",
+				"type" : "combo",
+				"value" : 2
+			},
+			"GlitchBG" :
+			{
+				"condition" : "showTime.value && timeType.value == 2 && wallpapermode.value != 3",
+				"order" : 155.55000000000001,
+				"text" : "ui_time_glitch_bg",
+				"type" : "bool",
+				"value" : true
+			},
+			"GradientRate" :
+			{
+				"condition" : "visual_audio_model.value == 1 && ColorMode.value != 1",
+				"max" : 40,
+				"min" : 1,
+				"order" : 64,
+				"text" : "ui_blur_spid",
+				"type" : "slider",
+				"value" : 5
+			},
+			"PWLineBlurColor" :
+			{
+				"condition" : "(visual_audio_model.value == 2 && (PWLineColorMode.value == 1 || PWLineColorMode.value == 3))||(PWLineColorMode.value == 2 && PWLineBlurColorGradient.value == false )",
+				"order" : 81,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 0.8 0.8"
+			},
+			"PWLineBlurColorGradient" :
+			{
+				"condition" : "visual_audio_model.value == 2 && PWLineColorMode.value == 2",
+				"order" : 78,
+				"text" : "ui_blur_gradient",
+				"type" : "bool",
+				"value" : true
+			},
+			"PWLineColor" :
+			{
+				"condition" : "visual_audio_model.value == 2 && PWLineColorMode.value == 1||(PWLineColorMode.value == 2 && PWLineSolidColorGradient.value == false )",
+				"order" : 80,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"PWLineColorMode" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"options" :
+				[
+					{
+						"condition" : "PWLinePosition.value == 1",
+						"label" : "ui_color_type_mono",
+						"value" : 1
+					},
+					{
+						"condition" : "PWLinePosition.value == 1",
+						"label" : "ui_color_type_gradient",
+						"value" : 2
+					},
+					{
+						"label" : "ui_color_type_chromo",
+						"value" : 3
+					}
+				],
+				"order" : 76,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"PWLineColorRhythm" :
+			{
+				"condition" : "visual_audio_model.value == 2 && PWLineColorMode.value == 3",
+				"order" : 79,
+				"text" : "ui_color_rhythm",
+				"type" : "bool",
+				"value" : true
+			},
+			"PWLineDensity" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 12,
+				"min" : 1,
+				"order" : 71,
+				"text" : "ui_music_count",
+				"type" : "slider",
+				"value" : 12
+			},
+			"PWLineDirection" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"options" :
+				[
+					{
+						"condition" : "PWLinePosition.value == 1",
+						"label" : "ui_effect_parcticl_dir_upl",
+						"value" : 1
+					},
+					{
+						"condition" : "PWLinePosition.value == 1",
+						"label" : "ui_effect_parcticl_dir_downr",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_1_dir_2",
+						"value" : 3
+					}
+				],
+				"order" : 68,
+				"text" : "ui_dir",
+				"type" : "combo",
+				"value" : 3
+			},
+			"PWLineGradientRate" :
+			{
+				"condition" : "visual_audio_model.value == 2 && PWLineColorMode.value != 1",
+				"max" : 40,
+				"min" : 1,
+				"order" : 82,
+				"text" : "ui_blur_spid",
+				"type" : "slider",
+				"value" : 5
+			},
+			"PWLinePosition" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"options" :
+				[
+					{
+						"label" : "ui_music_3_dir_up",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_3_dir_down",
+						"value" : 2
+					}
+				],
+				"order" : 66,
+				"text" : "ui_dir",
+				"type" : "combo",
+				"value" : 1
+			},
+			"PWLineRange" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 15,
+				"min" : 1,
+				"order" : 72,
+				"text" : "ui_sens",
+				"type" : "slider",
+				"value" : 8
+			},
+			"PWLineShow" :
+			{
+				"condition" : "visual_audio_model.value == 2 ? PWLineShow.value ? PWLineShow.text = 'ui_enable' : PWLineShow.text = 'ui_disable' : false",
+				"order" : 65,
+				"text" : "ui_enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"PWLineSolidColorGradient" :
+			{
+				"condition" : "visual_audio_model.value == 2 && PWLineColorMode.value == 6",
+				"order" : 77,
+				"text" : "ui_gradient_color",
+				"type" : "bool",
+				"value" : true
+			},
+			"PWLineSpacing" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 10,
+				"min" : 0,
+				"order" : 70,
+				"text" : "ui_space",
+				"type" : "slider",
+				"value" : 8
+			},
+			"PWLineStyle" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"options" :
+				[
+					{
+						"label" : "ui_music_style_type",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_style_up",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_style_up_no_line",
+						"value" : 3
+					}
+				],
+				"order" : 67,
+				"text" : "ui_music_style",
+				"type" : "combo",
+				"value" : 1
+			},
+			"PWLineTransparency" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 100,
+				"min" : 0,
+				"order" : 73,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 80
+			},
+			"PWLineWidth" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 10,
+				"min" : 1,
+				"order" : 69,
+				"text" : "ui_music_1_size",
+				"type" : "slider",
+				"value" : 9
+			},
+			"PWLineX" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 1000,
+				"min" : 0,
+				"order" : 74,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 500
+			},
+			"PWLineY" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"max" : 1000,
+				"min" : 0,
+				"order" : 75,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 500
+			},
+			"PWMiddleLine" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"order" : 68.5,
+				"text" : "ui_music_3_line",
+				"type" : "bool",
+				"value" : false
+			},
+			"PolygonAngle" :
+			{
+				"condition" : "visual_audio_model.value == 1 && showSemiCircle.value == false",
+				"max" : 12,
+				"min" : 1,
+				"order" : 50,
+				"text" : "ui_music_count",
+				"type" : "slider",
+				"value" : 12
+			},
+			"SemiCircledirection" :
+			{
+				"condition" : "visual_audio_model.value == 1 && showSemiCircle.value",
+				"max" : 360,
+				"min" : 0,
+				"order" : 47,
+				"text" : "ui_dir",
+				"type" : "slider",
+				"value" : 180
+			},
+			"SolidColorGradient" :
+			{
+				"condition" : "visual_audio_model.value == 1 && ColorMode.value == 6",
+				"order" : 59,
+				"text" : "Цвет градиента",
+				"type" : "bool",
+				"value" : true
+			},
+			"Text_Background_Options" :
+			{
+				"order" : 10,
+				"text" : "ui_background_text",
+				"type" : "text"
+			},
+			"Text_Date_1" :
+			{
+				"condition" : "showDate.value",
+				"order" : 161.09999999999999,
+				"text" : "ui_time_date_text",
+				"type" : "text"
+			},
+			"Text_Other" :
+			{
+				"order" : -1,
+				"text" : "ui_setting_text",
+				"type" : "text"
+			},
+			"Text_SpecialEffects" :
+			{
+				"order" : 30,
+				"text" : "ui_effect_text",
+				"type" : "text"
+			},
+			"Text_Visual_Time" :
+			{
+				"order" : 150,
+				"text" : "ui_time_text",
+				"type" : "text"
+			},
+			"Text_Visual_audio" :
+			{
+				"order" : 40,
+				"text" : "ui_music_text",
+				"type" : "text"
+			},
+			"Text_explain17" :
+			{
+				"condition" : "wallpapermode.value == 3",
+				"order" : 17,
+				"text" : "ui_background_mode_video_text",
+				"type" : "text"
+			},
+			"TimeBlurColor" :
+			{
+				"condition" : "showTime.value && TimeColorRhythm.value != true && timeType.value != 2",
+				"order" : 155.59999999999999,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "0.8 0.8 0.8"
+			},
+			"TimeColor" :
+			{
+				"condition" : "showTime.value && TimeColorRhythm.value != true",
+				"order" : 155.5,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"VideoVolume" :
+			{
+				"condition" : "wallpapermode.value == 3",
+				"max" : 100,
+				"min" : 0,
+				"order" : 16,
+				"text" : "ui_background_mode_video_volume",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audio_AudioText" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 84.5,
+				"text" : "ui_music_2_smash_text",
+				"type" : "text"
+			},
+			"audio_BallText" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 85.5,
+				"text" : "ui_music_2_ball_text",
+				"type" : "text"
+			},
+			"audio_LineText" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 84.799999999999997,
+				"text" : "ui_music_2_line_text",
+				"type" : "text"
+			},
+			"audio_amplitude" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 30,
+				"min" : 1,
+				"order" : 84.599999999999994,
+				"text" : "ui_sens",
+				"type" : "slider",
+				"value" : 5
+			},
+			"audio_ballRotation" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isBall.value",
+				"max" : 60,
+				"min" : -60,
+				"order" : 85.900000000000006,
+				"text" : "ui_rounding",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audio_ballSize" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isBall.value",
+				"max" : 10,
+				"min" : 1,
+				"order" : 85.799999999999997,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 3
+			},
+			"audio_ballSpacer" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isBall.value",
+				"max" : 10,
+				"min" : 1,
+				"order" : 85.700000000000003,
+				"text" : "ui_space",
+				"type" : "slider",
+				"value" : 4
+			},
+			"audio_color" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 83.900000000000006,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"audio_decline" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 20,
+				"min" : 0,
+				"order" : 84.700000000000003,
+				"text" : "ui_smash",
+				"type" : "slider",
+				"value" : 20
+			},
+			"audio_distance" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 100,
+				"min" : 0,
+				"order" : 85.299999999999997,
+				"text" : "ui_music_2_lenght",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audio_firstPoint" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isLineTo.value",
+				"options" :
+				[
+					{
+						"label" : "ui_music_2_dot_static",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_2_dot_in",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_2_dot_out",
+						"value" : 3
+					}
+				],
+				"order" : 85,
+				"text" : "ui_music_2_1_dot",
+				"type" : "combo",
+				"value" : 2
+			},
+			"audio_isBall" :
+			{
+				"condition" : "visual_audio_model.value == 3 ? audio_isBall.value ? audio_isBall.text = 'ui_enable' : audio_isBall.text = 'ui_disable' : false",
+				"order" : 85.599999999999994,
+				"text" : "ui_enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"audio_isClickOffset" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 84.200000000000003,
+				"text" : "ui_music_2_mouse",
+				"type" : "bool",
+				"value" : false
+			},
+			"audio_isInnerRing" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 83.400000000000006,
+				"text" : "ui_music_2_in_ring",
+				"type" : "bool",
+				"value" : true
+			},
+			"audio_isLineTo" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 84.900000000000006,
+				"text" : "ui_effect_parcticl_line",
+				"type" : "bool",
+				"value" : false
+			},
+			"audio_isOuterRing" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 83.5,
+				"text" : "ui_music_2_out_ring",
+				"type" : "bool",
+				"value" : true
+			},
+			"audio_isRing" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 83.200000000000003,
+				"text" : "ui_music_2_ring",
+				"type" : "bool",
+				"value" : true
+			},
+			"audio_isStaticRing" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 83.299999999999997,
+				"text" : "ui_music_2_stat_ring",
+				"type" : "bool",
+				"value" : false
+			},
+			"audio_lineWidth" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 10,
+				"min" : 1,
+				"order" : 85.400000000000006,
+				"text" : "ui_music_1_size",
+				"type" : "slider",
+				"value" : 5
+			},
+			"audio_offsetX" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isClickOffset.value == false",
+				"max" : 1000,
+				"min" : 0,
+				"order" : 84.299999999999997,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 500
+			},
+			"audio_offsetY" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isClickOffset.value == false",
+				"max" : 1000,
+				"min" : 0,
+				"order" : 84.400000000000006,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 500
+			},
+			"audio_opacity" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 100,
+				"min" : 0,
+				"order" : 83.799999999999997,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 90
+			},
+			"audio_pointNum" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 120,
+				"min" : 3,
+				"order" : 85.200000000000003,
+				"text" : "ui_music_count",
+				"type" : "slider",
+				"value" : 120
+			},
+			"audio_radius" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 1000,
+				"min" : 1,
+				"order" : 83.599999999999994,
+				"text" : "ui_radius",
+				"type" : "slider",
+				"value" : 500
+			},
+			"audio_ringRotation" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 60,
+				"min" : -60,
+				"order" : 83.700000000000003,
+				"text" : "ui_rounding",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audio_secondPoint" :
+			{
+				"condition" : "visual_audio_model.value == 3 && audio_isLineTo.value",
+				"options" :
+				[
+					{
+						"label" : "ui_music_2_dot_static",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_2_dot_in",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_2_dot_out",
+						"value" : 3
+					}
+				],
+				"order" : 85.099999999999994,
+				"text" : "ui_music_2_2_dot",
+				"type" : "combo",
+				"value" : 3
+			},
+			"audio_shadowBlur" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"max" : 10,
+				"min" : 0,
+				"order" : 84.099999999999994,
+				"text" : "ui_blur_size",
+				"type" : "slider",
+				"value" : 3
+			},
+			"audio_shadowColor" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 84,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"authorInformation" :
+			{
+				"order" : 10000,
+				"text" : "<hr><small>Script： FLomka<br/>Перевод на русский язык by FLomka.<br/>Translate English by FLomka and Digidro.</small><br/><br/><a href='https://fonts.google.com/'><img src='https://i.imgur.com/zjEegVZ.png'></a><br /><a href='https://steamcommunity.com/workshop/filedetails/discussion/1509243786/2140840224668431912/'><img src='https://i.imgur.com/OqsTkxD.png'></a><br /><a href='https://discord.gg/KuNA3cu/'><img src='https://i.imgur.com/l3fiQ2Z.png'></a>",
+				"type" : "text"
+			},
+			"backgroundColor" :
+			{
+				"condition" : "wallpapermode.value == 4",
+				"order" : 11.300000000000001,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "0.26 0.32 0.38"
+			},
+			"blurColor" :
+			{
+				"condition" : "(visual_audio_model.value == 1 && (ColorMode.value == 1 || ColorMode.value == 3))||(ColorMode.value == 2 && BlurColorGradient.value == false )",
+				"order" : 63,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 0.8 0.8"
+			},
+			"cX" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"max" : 1000,
+				"min" : 0,
+				"order" : 55,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 500
+			},
+			"cY" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"max" : 1000,
+				"min" : 0,
+				"order" : 56,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 500
+			},
+			"clockFont" :
+			{
+				"condition" : "showTime.value && timeType.value == 1",
+				"order" : 155.25,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : "Lato"
+			},
+			"clockFontDir" :
+			{
+				"condition" : "(showTime.value && timeType.value == 1 && clockFont.value == 'custom') || clockFontDir.value != ''",
+				"order" : 155.27000000000001,
+				"text" : "ui_font_dir",
+				"type" : "file",
+				"value" : ""
+			},
+			"color" :
+			{
+				"condition" : "visual_audio_model.value == 1 && ColorMode.value == 1||(ColorMode.value == 2 && SolidColorGradient.value == false )",
+				"order" : 62,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"customdirectory" :
+			{
+				"condition" : "wallpapermode.value == 2",
+				"mode" : "fetchall",
+				"order" : 13,
+				"text" : "ui_background_mode_slide_custom",
+				"type" : "directory"
+			},
+			"dateFont" :
+			{
+				"condition" : "showDate.value",
+				"order" : 160.16999999999999,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : "Lato"
+			},
+			"dateFontDir" :
+			{
+				"condition" : "(showDate.value && dateFont.value == 'custom') || dateFontDir.value != ''",
+				"order" : 160.19,
+				"text" : "ui_font_dir",
+				"type" : "file"
+			},
+			"datetransparency" :
+			{
+				"condition" : "showDate.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 160.16,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 80
+			},
+			"direction" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"options" :
+				[
+					{
+						"label" : "ui_music_1_dir_out",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_1_dir_in",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_1_dir_2",
+						"value" : 3
+					}
+				],
+				"order" : 49,
+				"text" : "ui_dir",
+				"type" : "combo",
+				"value" : 1
+			},
+			"foreground" :
+			{
+				"condition" : "wallpapermode.value == 1",
+				"order" : 12.5,
+				"text" : "ui_background_mode_img_custom_fg",
+				"type" : "file"
+			},
+			"foregroundDisplayStlye" :
+			{
+				"condition" : "wallpapermode.value == 1",
+				"options" :
+				[
+					{
+						"label" : "ui_background_mode_img_size_fill",
+						"value" : 1
+					},
+					{
+						"label" : "ui_background_mode_img_size_stretch",
+						"value" : 2
+					},
+					{
+						"label" : "ui_background_mode_img_size_adapt",
+						"value" : 3
+					},
+					{
+						"label" : "ui_background_mode_img_size_repiat",
+						"value" : 4
+					},
+					{
+						"label" : "ui_background_mode_img_size_center",
+						"value" : 5
+					}
+				],
+				"order" : 22.5,
+				"text" : "ui_background_mode_img_size_fg",
+				"type" : "combo",
+				"value" : 1
+			},
+			"image" :
+			{
+				"condition" : "wallpapermode.value == 1",
+				"order" : 12,
+				"text" : "ui_background_mode_img_custom",
+				"type" : "file"
+			},
+			"imagedisplaystlye" :
+			{
+				"condition" : "wallpapermode.value == 1",
+				"options" :
+				[
+					{
+						"label" : "ui_background_mode_img_size_fill",
+						"value" : 1
+					},
+					{
+						"label" : "ui_background_mode_img_size_stretch",
+						"value" : 2
+					},
+					{
+						"label" : "ui_background_mode_img_size_adapt",
+						"value" : 3
+					},
+					{
+						"label" : "ui_background_mode_img_size_repiat",
+						"value" : 4
+					},
+					{
+						"label" : "ui_background_mode_img_size_center",
+						"value" : 5
+					}
+				],
+				"order" : 22,
+				"text" : "ui_background_mode_img_size",
+				"type" : "combo",
+				"value" : 1
+			},
+			"imageswitchtimes" :
+			{
+				"condition" : "wallpapermode.value == 2",
+				"options" :
+				[
+					{
+						"label" : "ui_background_mode_slide_time_1_min",
+						"value" : 1
+					},
+					{
+						"label" : "ui_background_mode_slide_time_5_min",
+						"value" : 5
+					},
+					{
+						"label" : "ui_background_mode_slide_time_10_min",
+						"value" : 10
+					},
+					{
+						"label" : "ui_background_mode_slide_time_30_min",
+						"value" : 30
+					},
+					{
+						"label" : "ui_background_mode_slide_time_1_h",
+						"value" : 60
+					}
+				],
+				"order" : 19,
+				"text" : "ui_background_mode_slide_time",
+				"type" : "combo",
+				"value" : 1
+			},
+			"line155" :
+			{
+				"condition" : "showTime.value",
+				"order" : 155.09999999999999,
+				"text" : "ui_time_text_time",
+				"type" : "text"
+			},
+			"line160" :
+			{
+				"condition" : "showDate.value",
+				"order" : 160.09999999999999,
+				"text" : "ui_time_text_date",
+				"type" : "text"
+			},
+			"line42" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"order" : 42,
+				"text" : "ui_music_1_text",
+				"type" : "text"
+			},
+			"line43" :
+			{
+				"condition" : "visual_audio_model.value == 2",
+				"order" : 43,
+				"text" : "ui_music_3_text",
+				"type" : "text"
+			},
+			"line83" :
+			{
+				"condition" : "visual_audio_model.value == 3",
+				"order" : 83,
+				"text" : "ui_music_2_text",
+				"type" : "text"
+			},
+			"lineWidth" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"max" : 10,
+				"min" : 1,
+				"order" : 52,
+				"text" : "ui_music_1_size",
+				"type" : "slider",
+				"value" : 9
+			},
+			"monstercat_barPadding" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"max" : 35,
+				"min" : 0,
+				"order" : 45,
+				"text" : "ui_space",
+				"type" : "slider",
+				"value" : 4
+			},
+			"monstercat_barWidth" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"max" : 35,
+				"min" : 1,
+				"order" : 44,
+				"text" : "ui_music_monstercat_barWidth",
+				"type" : "slider",
+				"value" : 27
+			},
+			"monstercat_color" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"order" : 42,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"monstercat_double" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"order" : 48,
+				"text" : "ui_music_monstercat_double",
+				"type" : "bool",
+				"value" : false
+			},
+			"monstercat_opacity" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"max" : 100,
+				"min" : 0,
+				"order" : 50,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"monstercat_reverse" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"order" : 47,
+				"text" : "ui_music_monstercat_reverse",
+				"type" : "bool",
+				"value" : false
+			},
+			"monstercat_smoothing" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"max" : 10,
+				"min" : 1,
+				"order" : 43,
+				"text" : "ui_smash",
+				"type" : "slider",
+				"value" : 3
+			},
+			"monstercat_xPos" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"max" : 100,
+				"min" : 0,
+				"order" : 46,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"monstercat_yPos" :
+			{
+				"condition" : "visual_audio_model.value == 4",
+				"max" : 100,
+				"min" : 0,
+				"order" : 48,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 97
+			},
+			"noteAlignment" :
+			{
+				"condition" : "noteShow.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 8830,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "left"
+			},
+			"noteColor" :
+			{
+				"condition" : "noteShow.value",
+				"order" : 8850,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"noteColorBlur" :
+			{
+				"condition" : "noteShow.value && noteColorBlurType.value != 0",
+				"order" : 8870,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "0.2 0.2 0.2"
+			},
+			"noteColorBlurType" :
+			{
+				"condition" : "noteShow.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8860,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"noteColorType" :
+			{
+				"condition" : "noteShow.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8840,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"noteFont" :
+			{
+				"condition" : "noteShow.value",
+				"order" : 8810,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : "Lato"
+			},
+			"noteFontDir" :
+			{
+				"condition" : "(noteShow.value && noteFont.value == 'custom') || noteFontDir.value != ''",
+				"order" : 8820,
+				"text" : "ui_font_dir",
+				"type" : "file",
+				"value" : ""
+			},
+			"noteInner" :
+			{
+				"condition" : "noteShow.value",
+				"order" : 8800,
+				"text" : "ui_note_inner",
+				"type" : "textinput",
+				"value" : "Customize your wallpaper"
+			},
+			"noteShow" :
+			{
+				"order" : 8790,
+				"text" : "ui_note",
+				"type" : "bool",
+				"value" : false
+			},
+			"noteSize" :
+			{
+				"condition" : "noteShow.value",
+				"max" : 50,
+				"min" : 10,
+				"order" : 8880,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 16
+			},
+			"noteTransparency" :
+			{
+				"condition" : "noteShow.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8890,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 80
+			},
+			"noteX" :
+			{
+				"condition" : "noteShow.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8900,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 41
+			},
+			"noteY" :
+			{
+				"condition" : "noteShow.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8910,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 44
+			},
+			"particles_color" :
+			{
+				"condition" : "particles_isParticles.value",
+				"order" : 33.5,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"particles_direction_x" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"max" : 100,
+				"min" : -100,
+				"order" : 35,
+				"text" : "ui_dir_x",
+				"type" : "slider",
+				"value" : 0
+			},
+			"particles_direction_y" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"max" : 100,
+				"min" : -100,
+				"order" : 35.000999999999998,
+				"text" : "ui_dir_y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"particles_image" :
+			{
+				"condition" : "particles_isParticles.value && particles_shapeType.value == 5",
+				"order" : 33.899999999999999,
+				"text" : "ui_effect_parcticl_form_custom_file",
+				"type" : "file"
+			},
+			"particles_isBounce" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"order" : 35.200000000000003,
+				"text" : "ui_effect_parcticl_mirror",
+				"type" : "bool",
+				"value" : false
+			},
+			"particles_isMove" :
+			{
+				"condition" : "particles_isParticles.value",
+				"order" : 34.700000000000003,
+				"text" : "ui_effect_parcticl_move",
+				"type" : "bool",
+				"value" : true
+			},
+			"particles_isParticles" :
+			{
+				"order" : 33.100000000000001,
+				"text" : "ui_effect_parcticl_text",
+				"type" : "bool",
+				"value" : true
+			},
+			"particles_isStraight" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"order" : 35.100000000000001,
+				"text" : "ui_effect_parcticl_go",
+				"type" : "bool",
+				"value" : false
+			},
+			"particles_linkColor" :
+			{
+				"condition" : "particles_isParticles.value && particles_linkEnable.value",
+				"order" : 34.5,
+				"text" : "ui_effect_parcticl_line_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"particles_linkDistance" :
+			{
+				"condition" : "particles_isParticles.value && particles_linkEnable.value",
+				"max" : 300,
+				"min" : 0,
+				"order" : 34.299999999999997,
+				"text" : "ui_effect_parcticl_line_leght",
+				"type" : "slider",
+				"value" : 60
+			},
+			"particles_linkEnable" :
+			{
+				"condition" : "particles_isParticles.value",
+				"order" : 34.200000000000003,
+				"text" : "ui_effect_parcticl_line",
+				"type" : "bool",
+				"value" : false
+			},
+			"particles_linkOpacity" :
+			{
+				"condition" : "particles_isParticles.value && particles_linkEnable.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 34.600000000000001,
+				"text" : "ui_effect_parcticl_line_transpent",
+				"type" : "slider",
+				"value" : 75
+			},
+			"particles_linkWidth" :
+			{
+				"condition" : "particles_isParticles.value && particles_linkEnable.value",
+				"max" : 10,
+				"min" : 0,
+				"order" : 34.399999999999999,
+				"text" : "ui_effect_parcticl_line_size",
+				"type" : "slider",
+				"value" : 2
+			},
+			"particles_moveOutMode" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"options" :
+				[
+					{
+						"label" : "ui_effect_parcticl_mode_move_out",
+						"value" : 1
+					},
+					{
+						"label" : "ui_effect_parcticl_mode_move_in",
+						"value" : 2
+					}
+				],
+				"order" : 35.299999999999997,
+				"text" : "ui_effect_parcticl_mode_move",
+				"type" : "combo",
+				"value" : 1
+			},
+			"particles_musicRandom" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"order" : 34.909999999999997,
+				"text" : "ui_effect_parcticl_music_speed",
+				"type" : "bool",
+				"value" : false
+			},
+			"particles_musicStrengh" :
+			{
+				"condition" : "particles_isParticles.value && particles_musicRandom.value && particles_isMove.value",
+				"max" : 100,
+				"min" : 1,
+				"order" : 34.920000000000002,
+				"text" : "ui_effect_parcticl_music_strengh",
+				"type" : "slider",
+				"value" : 50
+			},
+			"particles_musicTone" :
+			{
+				"condition" : "particles_isParticles.value && particles_musicRandom.value && particles_isMove.value",
+				"options" :
+				[
+					{
+						"label" : "ui_effect_parcticl_music_bass",
+						"value" : 1
+					},
+					{
+						"label" : "ui_effect_parcticl_music_tenor",
+						"value" : 2
+					},
+					{
+						"label" : "ui_effect_parcticl_music_mezzo_soprano",
+						"value" : 3
+					},
+					{
+						"label" : "ui_effect_parcticl_music_soprano",
+						"value" : 4
+					}
+				],
+				"order" : 34.914999999999999,
+				"text" : "ui_effect_parcticl_music_tone",
+				"type" : "combo",
+				"value" : 1
+			},
+			"particles_number" :
+			{
+				"condition" : "particles_isParticles.value",
+				"max" : 2000,
+				"min" : 0,
+				"order" : 33.200000000000003,
+				"text" : "ui_count",
+				"type" : "slider",
+				"value" : 700
+			},
+			"particles_opacity" :
+			{
+				"condition" : "particles_isParticles.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 33.299999999999997,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 75
+			},
+			"particles_opacityRandom" :
+			{
+				"condition" : "particles_isParticles.value",
+				"order" : 33.399999999999999,
+				"text" : "ui_effect_parcticl_random",
+				"type" : "bool",
+				"value" : true
+			},
+			"particles_shadowBlur" :
+			{
+				"condition" : "particles_isParticles.value",
+				"max" : 5,
+				"min" : 0,
+				"order" : 33.700000000000003,
+				"text" : "ui_blur_size",
+				"type" : "slider",
+				"value" : 0
+			},
+			"particles_shadowColor" :
+			{
+				"condition" : "particles_isParticles.value",
+				"order" : 33.600000000000001,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"particles_shapeType" :
+			{
+				"condition" : "particles_isParticles.value",
+				"options" :
+				[
+					{
+						"label" : "ui_effect_parcticl_form_round",
+						"value" : 1
+					},
+					{
+						"label" : "ui_effect_parcticl_form_square",
+						"value" : 2
+					},
+					{
+						"label" : "ui_effect_parcticl_form_triangle",
+						"value" : 3
+					},
+					{
+						"label" : "ui_effect_parcticl_form_star",
+						"value" : 4
+					},
+					{
+						"label" : "ui_effect_parcticl_form_custom",
+						"value" : 5
+					},
+					{
+						"label" : "ui_effect_parcticl_form_snow",
+						"value" : 6
+					}
+				],
+				"order" : 33.799999999999997,
+				"text" : "ui_form",
+				"type" : "combo",
+				"value" : 1
+			},
+			"particles_sizeRandom" :
+			{
+				"condition" : "particles_isParticles.value",
+				"order" : 34.100000000000001,
+				"text" : "ui_effect_parcticl_random_size",
+				"type" : "bool",
+				"value" : true
+			},
+			"particles_sizeValue" :
+			{
+				"condition" : "particles_isParticles.value",
+				"max" : 50,
+				"min" : 0,
+				"order" : 34,
+				"text" : "ui_effect_parcticl_size",
+				"type" : "slider",
+				"value" : 2
+			},
+			"particles_speed" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"max" : 100,
+				"min" : 1,
+				"order" : 34.799999999999997,
+				"text" : "ui_effect_parcticl_speed",
+				"type" : "slider",
+				"value" : 5
+			},
+			"particles_speedRandom" :
+			{
+				"condition" : "particles_isParticles.value && particles_isMove.value",
+				"order" : 34.899999999999999,
+				"text" : "ui_effect_parcticl_random_speed",
+				"type" : "bool",
+				"value" : true
+			},
+			"radius" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"max" : 1000,
+				"min" : 1,
+				"order" : 53,
+				"text" : "ui_radius",
+				"type" : "slider",
+				"value" : 500
+			},
+			"random" :
+			{
+				"condition" : "wallpapermode.value == 2",
+				"order" : 18,
+				"text" : "ui_background_mode_slide_rundom",
+				"type" : "bool",
+				"value" : false
+			},
+			"range" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"max" : 60,
+				"min" : 1,
+				"order" : 54,
+				"text" : "ui_sens",
+				"type" : "slider",
+				"value" : 9
+			},
+			"rotation" :
+			{
+				"condition" : "visual_audio_model.value == 1 && showSemiCircle.value == false",
+				"max" : 10,
+				"min" : -10,
+				"order" : 51,
+				"text" : "ui_rounding",
+				"type" : "slider",
+				"value" : 0
+			},
+			"schemecolor" :
+			{
+				"order" : 1,
+				"text" : "ui_setting_colortheme",
+				"type" : "color",
+				"value" : "#151515"
+			},
+			"selectvideo" :
+			{
+				"condition" : "wallpapermode.value == 3",
+				"fileType" : "video",
+				"order" : 15,
+				"text" : "ui_background_mode_video_custom",
+				"type" : "file",
+				"value" : null
+			},
+			"showCircle" :
+			{
+				"condition" : "visual_audio_model.value == 1 ? showCircle.value ? showCircle.text = 'ui_enable' : showCircle.text = 'ui_disable' : false",
+				"order" : 45,
+				"text" : "ui_enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"showDate" :
+			{
+				"order" : 152,
+				"text" : "ui_time_date",
+				"type" : "bool",
+				"value" : true
+			},
+			"showSemiCircle" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"order" : 46,
+				"text" : "ui_music_1_low_round",
+				"type" : "bool",
+				"value" : false
+			},
+			"showTime" :
+			{
+				"order" : 151,
+				"text" : "ui_time_time",
+				"type" : "bool",
+				"value" : true
+			},
+			"spotifyArtist" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8230,
+				"text" : "ui_spotify_artist",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyArtistAlignment" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 8260,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "center"
+			},
+			"spotifyArtistColor" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value && spotifyArtistColorType.value == 1",
+				"order" : 8280,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyArtistColorBlur" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value && spotifyArtistColorBlurType.value == 1",
+				"order" : 8300,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyArtistColorBlurType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8290,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyArtistColorType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8270,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyArtistFont" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"order" : 8240,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyArtistFontDir" :
+			{
+				"condition" : "(spotifyEnable.value && spotifyArtist.value && spotifyArtistFont.value == 'custom') || spotifyArtistFontDir.value != ''",
+				"order" : 8250,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyArtistSize" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"max" : 60,
+				"min" : 10,
+				"order" : 8310,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 10
+			},
+			"spotifyArtistTransparency" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8320,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotifyArtistX" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8330,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyArtistY" :
+			{
+				"condition" : "spotifyEnable.value && spotifyArtist.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8340,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyDuration" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8470,
+				"text" : "ui_spotify_duration",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyDurationAlignment" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 8500,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "center"
+			},
+			"spotifyDurationColor" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value && spotifyDurationColorType.value == 1",
+				"order" : 8520,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyDurationColorBlur" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value && spotifyDurationColorBlurType.value == 1",
+				"order" : 8540,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyDurationColorBlurType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8530,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyDurationColorType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8510,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyDurationFont" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"order" : 8480,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyDurationFontDir" :
+			{
+				"condition" : "(spotifyEnable.value && spotifyDuration.value && spotifyDurationFont.value == 'custom') || spotifyDurationFontDir.value != ''",
+				"order" : 8490,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyDurationSize" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"max" : 60,
+				"min" : 10,
+				"order" : 8550,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 10
+			},
+			"spotifyDurationTransparency" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8560,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotifyDurationX" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8570,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyDurationY" :
+			{
+				"condition" : "spotifyEnable.value && spotifyDuration.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8580,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyEnable" :
+			{
+				"order" : 8010,
+				"text" : "<hr><img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png' width='100px' heigth='20px'><hr>",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyImg" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8040,
+				"text" : "ui_spotify_img",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyImgBlur" :
+			{
+				"condition" : "spotifyEnable.value && spotifyImg.value",
+				"order" : 8090,
+				"text" : "ui_spotify_blur",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyImgProtect" :
+			{
+				"condition" : "spotifyEnable.value && spotifyImg.value",
+				"order" : 8100,
+				"text" : "ui_spotify_protect",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyImgSize" :
+			{
+				"condition" : "spotifyEnable.value && spotifyImg.value",
+				"options" :
+				[
+					{
+						"label" : "ui_small",
+						"value" : 2
+					},
+					{
+						"label" : "ui_medium",
+						"value" : 1
+					},
+					{
+						"label" : "ui_large",
+						"value" : 0
+					}
+				],
+				"order" : 8050,
+				"text" : "ui_size",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyImgTransparency" :
+			{
+				"condition" : "spotifyEnable.value && spotifyImg.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8060,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotifyImgX" :
+			{
+				"condition" : "spotifyEnable.value && spotifyImg.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8070,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyImgY" :
+			{
+				"condition" : "spotifyEnable.value && spotifyImg.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8080,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyLabel" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8110,
+				"text" : "ui_spotify_label",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyLabelAlignment" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 8140,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "center"
+			},
+			"spotifyLabelColor" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value && spotifyLabelColorType.value == 1",
+				"order" : 8160,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyLabelColorBlur" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value && spotifyLabelColorBlurType.value == 1",
+				"order" : 8180,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyLabelColorBlurType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8170,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyLabelColorType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8150,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyLabelFont" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"order" : 8120,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyLabelFontDir" :
+			{
+				"condition" : "(spotifyEnable.value && spotifyLabel.value && spotifyLabelFont.value == 'custom') || spotifyLabelFontDir.value != ''",
+				"order" : 8130,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyLabelSize" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"max" : 60,
+				"min" : 10,
+				"order" : 8190,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 10
+			},
+			"spotifyLabelTransparency" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8200,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotifyLabelX" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8210,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyLabelY" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLabel.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8220,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyLine" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8590,
+				"text" : "ui_spotify_line",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyLineColor" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value && spotifyLineColorType.value == 1",
+				"order" : 8660,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyLineColorBlur" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value && spotifyLineColorBlurType.value == 1",
+				"order" : 8680,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyLineColorBlurType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8670,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyLineColorLine" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value && spotifyLineColorLineType.value == 1",
+				"order" : 8640,
+				"text" : "ui_spotify_color_line",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyLineColorLineType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8630,
+				"text" : "ui_spotify_color_line_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyLineColorType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8650,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyLineHeight" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"max" : 40,
+				"min" : 1,
+				"order" : 8610,
+				"text" : "ui_height",
+				"type" : "slider",
+				"value" : 7
+			},
+			"spotifyLineRadius" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"max" : 15,
+				"min" : 0,
+				"order" : 8620,
+				"text" : "ui_radius",
+				"type" : "slider",
+				"value" : 10
+			},
+			"spotifyLineTransparency" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8690,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotifyLineWidth" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"max" : 100,
+				"min" : 1,
+				"order" : 8600,
+				"text" : "ui_widht",
+				"type" : "slider",
+				"value" : 10
+			},
+			"spotifyLineX" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8700,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyLineY" :
+			{
+				"condition" : "spotifyEnable.value && spotifyLine.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8710,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyProgress" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8350,
+				"text" : "ui_spotify_progress",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotifyProgressAlignment" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 8380,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "center"
+			},
+			"spotifyProgressColor" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value && spotifyProgressColorType.value == 1",
+				"order" : 8400,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyProgressColorBlur" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value && spotifyProgressColorBlurType.value == 1",
+				"order" : 8420,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotifyProgressColorBlurType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8410,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyProgressColorType" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 8390,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"spotifyProgressFont" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"order" : 8360,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyProgressFontDir" :
+			{
+				"condition" : "(spotifyEnable.value && spotifyProgress.value && spotifyProgressFont.value == 'custom') || spotifyProgressFontDir.value != ''",
+				"order" : 8370,
+				"text" : "ui_font",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotifyProgressSize" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"max" : 60,
+				"min" : 10,
+				"order" : 8430,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 10
+			},
+			"spotifyProgressTransparency" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8440,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotifyProgressX" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8450,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyProgressY" :
+			{
+				"condition" : "spotifyEnable.value && spotifyProgress.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 8460,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spotifyToken" :
+			{
+				"condition" : "spotifyEnable.value",
+				"order" : 8020,
+				"text" : "<a href='https://accounts.spotify.com/ru/authorize?client_id=0b0e6ad511414e058375932e4755acc3&response_type=code&redirect_uri=https:%2F%2Ffflomka.github.io%2FCWAV-Engine-Connect-Spotify%2F&scope=user-read-currently-playing&state=34fFs29kd09'>Spotify Token</a>",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"style" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"options" :
+				[
+					{
+						"label" : "ui_music_style_type",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_style_up",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_style_up_no_line",
+						"value" : 3
+					}
+				],
+				"order" : 49,
+				"text" : "ui_music_style",
+				"type" : "combo",
+				"value" : 1
+			},
+			"tAlignment" :
+			{
+				"condition" : "showTime.value && timeType.value == 1",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 158.09,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "center"
+			},
+			"tDotSec" :
+			{
+				"condition" : "showTime.value && tDotSec2.value == false && timeType.value != 3 && timeType.value != 4",
+				"order" : 158.09999999999999,
+				"text" : "ui_time_dot1",
+				"type" : "bool",
+				"value" : false
+			},
+			"tDotSec2" :
+			{
+				"condition" : "showTime.value && tDotSec.value == false && timeType.value != 3 && timeType.value != 4",
+				"order" : 158.11000000000001,
+				"text" : "ui_time_dot2",
+				"type" : "bool",
+				"value" : false
+			},
+			"tShowSencends" :
+			{
+				"condition" : "showTime.value && timeType.value != 3",
+				"order" : 158,
+				"text" : "ui_time_sec",
+				"type" : "bool",
+				"value" : false
+			},
+			"tSize" :
+			{
+				"condition" : "showTime.value",
+				"max" : 50,
+				"min" : 10,
+				"order" : 156,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 34
+			},
+			"tStyle" :
+			{
+				"condition" : "showTime.value && timeType.value != 3",
+				"order" : 157,
+				"text" : "ui_time_24",
+				"type" : "bool",
+				"value" : true
+			},
+			"tX" :
+			{
+				"condition" : "showTime.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 159,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"tY" :
+			{
+				"condition" : "showTime.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 160,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"timeType" :
+			{
+				"condition" : "showTime.value",
+				"options" :
+				[
+					{
+						"label" : "ui_time_type_classic",
+						"value" : 1
+					},
+					{
+						"label" : "ui_time_type_glitch",
+						"value" : 2
+					},
+					{
+						"label" : "ui_time_type_digital",
+						"value" : 3
+					},
+					{
+						"label" : "ui_time_type_slide",
+						"value" : 4
+					}
+				],
+				"order" : 155.19999999999999,
+				"text" : "ui_time_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"timetransparency" :
+			{
+				"condition" : "showTime.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 155.30000000000001,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"videomodel" :
+			{
+				"condition" : "wallpapermode.value == 3",
+				"options" :
+				[
+					{
+						"label" : "Miko Fox",
+						"value" : 1
+					},
+					{
+						"label" : "Water Effect",
+						"value" : 2
+					},
+					{
+						"label" : "Rain Drops",
+						"value" : 3
+					},
+					{
+						"label" : "智子三体",
+						"value" : 4
+					},
+					{
+						"label" : "WLOP",
+						"value" : 5
+					},
+					{
+						"label" : "WLOP",
+						"value" : 6
+					},
+					{
+						"label" : "WLOP-Aeolion",
+						"value" : 8
+					},
+					{
+						"label" : "Nier Automata",
+						"value" : 9
+					}
+				],
+				"order" : 14,
+				"text" : "ui_background_mode_video_stand",
+				"type" : "combo",
+				"value" : 1
+			},
+			"visual_audio_model" :
+			{
+				"options" :
+				[
+					{
+						"label" : "ui_music_type_0",
+						"value" : 0
+					},
+					{
+						"label" : "ui_music_type_1",
+						"value" : 1
+					},
+					{
+						"label" : "ui_music_type_2",
+						"value" : 3
+					},
+					{
+						"label" : "ui_music_type_3",
+						"value" : 2
+					},
+					{
+						"label" : "ui_music_type_4",
+						"value" : 4
+					}
+				],
+				"order" : 41,
+				"text" : "ui_music_type",
+				"type" : "combo",
+				"value" : 4
+			},
+			"wallpapermode" :
+			{
+				"options" :
+				[
+					{
+						"label" : "ui_background_mode_img",
+						"value" : 1
+					},
+					{
+						"label" : "ui_background_mode_slide",
+						"value" : 2
+					},
+					{
+						"label" : "ui_background_mode_video",
+						"value" : 3
+					},
+					{
+						"label" : "ui_background_mode_color",
+						"value" : 4
+					}
+				],
+				"order" : 11,
+				"text" : "ui_background_mode",
+				"type" : "combo",
+				"value" : 1
+			},
+			"wavetransparency" :
+			{
+				"condition" : "visual_audio_model.value == 1",
+				"max" : 100,
+				"min" : 0,
+				"order" : 57,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 80
+			},
+			"weatherApiKeySecondary" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9010,
+				"text" : "ui_weather_secondary_api",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"weatherApiText" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9020,
+				"text" : "<small>★API-key: <a href='https://weatherstack.com/'>Weatherstack</a></small>",
+				"type" : "text"
+			},
+			"weatherColorBlurType" :
+			{
+				"condition" : "weather_show.value",
+				"options" :
+				[
+					{
+						"label" : "ui_off",
+						"value" : 0
+					},
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 9140,
+				"text" : "ui_color_blur_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"weatherColorType" :
+			{
+				"condition" : "weather_show.value",
+				"options" :
+				[
+					{
+						"label" : "ui_color",
+						"value" : 1
+					},
+					{
+						"label" : "ui_spotify_primal_color",
+						"value" : 2
+					},
+					{
+						"label" : "ui_spotify_light_color",
+						"value" : 3
+					},
+					{
+						"label" : "ui_spotify_dark_color",
+						"value" : 4
+					},
+					{
+						"label" : "ui_spotify_darkness_color",
+						"value" : 5
+					}
+				],
+				"order" : 9120,
+				"text" : "ui_color_type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"weatherFont" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9090,
+				"text" : "ui_font",
+				"type" : "textinput"
+			},
+			"weatherFontDir" :
+			{
+				"condition" : "(weather_show.value && weatherFont.value == 'custom') || weatherFontDir.value != ''",
+				"order" : 9100,
+				"text" : "ui_font_dir",
+				"type" : "file",
+				"value" : ""
+			},
+			"weatherSlowUpdate" :
+			{
+				"condition" : "weather_show.value ? weatherSlowUpdate.value ? weatherSlowUpdate.text = 'ui_weather_slow_en' : weatherSlowUpdate.text = 'ui_weather_slow_dis' : false",
+				"order" : 9030,
+				"type" : "bool",
+				"value" : false
+			},
+			"weatherText2" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9050,
+				"text" : "ui_weather_city_text",
+				"type" : "text"
+			},
+			"weatherText3" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9070,
+				"text" : "ui_weather_format_text",
+				"type" : "text"
+			},
+			"weatherX" :
+			{
+				"condition" : "weather_show.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 9180,
+				"text" : "ui_posX",
+				"type" : "slider",
+				"value" : 50
+			},
+			"weatherY" :
+			{
+				"condition" : "weather_show.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 9190,
+				"text" : "ui_posY",
+				"type" : "slider",
+				"value" : 57
+			},
+			"weather_Alignment" :
+			{
+				"condition" : "weather_show.value",
+				"options" :
+				[
+					{
+						"label" : "ui_left",
+						"value" : "left"
+					},
+					{
+						"label" : "ui_center",
+						"value" : "center"
+					},
+					{
+						"label" : "ui_right",
+						"value" : "right"
+					}
+				],
+				"order" : 9110,
+				"text" : "ui_alignment",
+				"type" : "combo",
+				"value" : "center"
+			},
+			"weather_ApiKey" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9000,
+				"text" : "ui_weather_api",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"weather_BlurColor" :
+			{
+				"condition" : "weather_show.value && weatherColorBlurType.value != 0",
+				"order" : 9150,
+				"text" : "ui_color_blur",
+				"type" : "color",
+				"value" : "1 0.8 0.8"
+			},
+			"weather_CityText" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9040,
+				"text" : "ui_weather_city",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"weather_Color" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9130,
+				"text" : "ui_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"weather_Format" :
+			{
+				"condition" : "weather_show.value",
+				"order" : 9060,
+				"text" : "ui_weather_format",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"weather_show" :
+			{
+				"order" : 8990,
+				"text" : "<hr><img src='https://weatherstack.com/site_images/weatherstack_logo_white.png' width='140px' heigth='20px'><hr>",
+				"type" : "bool",
+				"value" : false
+			},
+			"weather_size" :
+			{
+				"condition" : "weather_show.value",
+				"max" : 50,
+				"min" : 10,
+				"order" : 9160,
+				"text" : "ui_size",
+				"type" : "slider",
+				"value" : 10
+			},
+			"weather_timetransparency" :
+			{
+				"condition" : "weather_show.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 9170,
+				"text" : "ui_transparency",
+				"type" : "slider",
+				"value" : 100
+			},
+			"weather_units" :
+			{
+				"condition" : "weather_show.value",
+				"options" :
+				[
+					{
+						"label" : "ui_weather_metric",
+						"value" : "m"
+					},
+					{
+						"label" : "ui_weather_scientific",
+						"value" : "s"
+					},
+					{
+						"label" : "ui_weather_fahrenheit",
+						"value" : "f"
+					}
+				],
+				"order" : 9080,
+				"text" : "ui_weather_units",
+				"type" : "combo",
+				"value" : "m"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Relaxing" ],
+	"title" : "bg",
+	"type" : "web",
+	"version" : 3,
+	"visibility" : "public",
+	"workshopid" : ""
+}

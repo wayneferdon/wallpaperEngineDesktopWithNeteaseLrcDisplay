@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="./main.css"/>
+	</head>
+	<body>
+		<img id="loader" class="loader" src="E:\Wayne Custaf Laqinoa Ferdon\Pictures\Monster Hunter World Wallpaper by VermillionACD - Imgur.jpg" width="1920" height="1080">
+			<!-- <div class="cycle">
+				<div class="cycle2"></div>
+			</div>
+			<div class="img"></div> -->
+			<!-- <img src="E:\Wayne Custaf Laqinoa Ferdon\Pictures\Monster Hunter World Wallpaper by VermillionACD - Imgur.jpg" width="1920" height="1080" ></img> -->
+		</img>
+		<div class="app">
+			<div class="background"></div>
+			<video class="videoground" autoplay loop></video>
+
+			<div id="snow_s"></div>
+
+			<div id="clock_classic"></div>
+			<div class="screen glitch">
+			  	<div class="clock is-off"><span data-time="" class="time"></span></div>
+			</div>
+			<div class="digital_clock" id="digital_clock">
+			  <div class="digit">
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			  </div>
+			  <div class="digit">
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			  </div>
+			  <div class="digit">
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			  </div>
+			  <div class="digit">
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			  </div>
+			  <div class="digit">
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			  </div>
+			  <div class="digit">
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			    <div class="line"></div>
+			  </div>
+			</div>
+			<div class="column2">
+				<div class="column">
+				  <div class="num">0</div>
+				  <div class="num">1</div>
+				  <div class="num">2</div>
+				</div>
+				<div class="column">
+				  <div class="num">0</div>
+				  <div class="num">1</div>
+				  <div class="num">2</div>
+				  <div class="num">3</div>
+				  <div class="num">4</div>
+				  <div class="num">5</div>
+				  <div class="num">6</div>
+				  <div class="num">7</div>
+				  <div class="num">8</div>
+				  <div class="num">9</div>
+				</div>
+				<div class="colon"></div>
+				<div class="column">
+				  <div class="num">0</div>
+				  <div class="num">1</div>
+				  <div class="num">2</div>
+				  <div class="num">3</div>
+				  <div class="num">4</div>
+				  <div class="num">5</div>
+				</div>
+				<div class="column">
+				  <div class="num">0</div>
+				  <div class="num">1</div>
+				  <div class="num">2</div>
+				  <div class="num">3</div>
+				  <div class="num">4</div>
+				  <div class="num">5</div>
+				  <div class="num">6</div>
+				  <div class="num">7</div>
+				  <div class="num">8</div>
+				  <div class="num">9</div>
+				</div>
+				<div class="colon showed"></div>
+				<div class="column">
+				  <div class="num">0</div>
+				  <div class="num">1</div>
+				  <div class="num">2</div>
+				  <div class="num">3</div>
+				  <div class="num">4</div>
+				  <div class="num">5</div>
+				</div>
+				<div class="column">
+				  <div class="num">0</div>
+				  <div class="num">1</div>
+				  <div class="num">2</div>
+				  <div class="num">3</div>
+				  <div class="num">4</div>
+				  <div class="num">5</div>
+				  <div class="num">6</div>
+				  <div class="num">7</div>
+				  <div class="num">8</div>
+				  <div class="num">9</div>
+				</div>
+			</div>
+			<div id="oDate" class="module"></div>
+			<div id="weather" class="module"></div>
+			<div id="noteBlock" class="module"></div>
+			<div id="spotify" class="module spotify"></div>
+			<div id="netease" class="netease"></div>
+
+			<canvas id="can"></canvas>
+			<canvas id="CanLine"></canvas>
+			<canvas id="monstercat"></canvas>
+			<canvas id="simples"></canvas>
+		</div>
+
+
+		<script src="js/lib/jquery-3.2.1.min.js"></script>
+		<script src="js/lib/jquery.backstretch.min.js"></script>
+		<script src="js/lib/color-thief.min.js"></script>
+		<script src="js/lib/Vibrant.min.js"></script>
+		<script src="js/jquery.leoweather.min.js"></script>
+		<script src="js/jquery.particles.js"></script>
+		<script src="js/jquery.audiovisualizer.js"></script>
+		<script src="js/snow_surpirze.js"></script>
+
+		<script src="module/weather.js"></script>
+		<script src="module/date.js"></script>
+		<script src="module/note.js"></script>
+		<script src="module/spotify.js"></script>
+		<script src="module/dataCollector.js"></script>
+		<script src="module/fonts.js"></script>
+
+		<script src="js/main.js"></script>
+		<script src="js/loader.js"></script>
+
+		<script src="js/background.setting.js"></script>
+
+		<script src="js/effect_particles.setting.js"></script>
+		<script src="js/weather.setting.js"></script>
+		<script src="js/clock.setting.js"></script>
+		<script src="js/date.setting.js"></script>
+		<script src="js/visualizer_monstercat.setting.js"></script>
+		<script src="js/note.setting.js"></script>
+		<script src="js/spotify.setting.js"></script>
+
+		<script src="module/visualizer/PWLine.js"></script>
+		<script src="module/visualizer/PWCircle.js"></script>
+		<script src="module/visualizer/monsterCat.js"></script>
+
+		<script src="module/clock/main.js"></script>
+			<div class="foreground"></div>
+		<script src="module/netease.js"></script>
+
+	</body>
+</html>
