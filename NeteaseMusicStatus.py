@@ -253,6 +253,7 @@ class NeteaseMusicStatus():
                 print("----------------------")
                 if validInfo in ['setPosition', 'resume']:
                     self.setCurrentLrc(self.lastPosition)
+                    self.outPutCurrentLrc()
         return False
 
     def start(self, interval=0.001):
@@ -408,7 +409,9 @@ class NeteaseMusicStatus():
                     except Exception:
                         pass
         else:
+            print('tttttttt', targetTime*1000)
             for timeItem in self.songLrcKeyTime:
+                print(timeItem)
                 if timeItem >= targetTime*1000:
                     break
             try:
