@@ -1,4 +1,4 @@
-# wallpaperEngineDesktopWithNeteaseLryDisplay
+# wallpaperEngineDesktopWithNeteaseLrcDisplay
 base on [CWAV Engine] Custom Wallpaper Audio Visual Engine
 (by FLomka and Digidro[https://steamcommunity.com/id/flomka/][https://steamcommunity.com/id/Digidro])
 
