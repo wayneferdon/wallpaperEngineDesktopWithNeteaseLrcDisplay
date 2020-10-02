@@ -75,6 +75,7 @@ class NeteaseMusicStatus():
         self.currentLrc = ''
         self.currentTLrc = ''
         self.nextLrc = ''
+        self.nextTLrc = ''
         self.currentLrcTime = 0
         self.nextLrcTime = 0
         self.songLrcKeyTime = []
@@ -127,6 +128,10 @@ class NeteaseMusicStatus():
                 currentTimePosition = self.lastPosition
             self.getLrc()
             self.setCurrentLrc(currentTimePosition)
+            print(self.currentLrc)
+            print(self.currentTLrc)
+            print(self.nextLrc)
+            print(self.nextTLrc)
             self.outPutCurrentLrc()
         self.initializing = False
 
@@ -306,13 +311,12 @@ class NeteaseMusicStatus():
 
         outPutLrc = '<div class="lrc">' + currentL + '</div>' + \
                     '<div class="tlrc">' + currentTL + '</div>' + \
-                    '<div class="lrc">' + nextL + '</div>' + \
-                    '<div class="tlrc">' + nextTL + '</div>'
+                    '<div class="tlrc2">' + nextL + '</div>' + \
+                    '<div class="tlrc2">' + nextTL + '</div>'
         if outPutLrc != self.outPutLrc:
             with open(self.outPut_path, 'w', encoding='utf-8') as outPutFile:
                 outPutFile.write(outPutLrc)
             print(self.nextLrc)
-            # print(outPutLrc)
             self.outPutLrc = outPutLrc
 
     def check_file_validity(self):
@@ -354,42 +358,59 @@ class NeteaseMusicStatus():
                 except Exception as e:
                     pass
             return newList
-
         url = "http://music.163.com/api/song/lyric?id=" + str(self.currentSong) + "&lv=1&kv=1&tv=-1"
         headers = {'user-agent': 'firefox'}
         jsonDate = requests.get(url, headers=headers)
         jsonDate = json.loads(jsonDate.text)
-        try:
-            lyric = jsonDate['lrc']['lyric']
-        except KeyError:
-            lyric = None
-        try:
-            translatedLyric = jsonDate['tlyric']['lyric']
-        except KeyError:
-            translatedLyric = None
-
-        newL = splitTimeLrc(lyric)
-        newTL = splitTimeLrc(translatedLyric)
         result = dict()
-        if newL is None:
-            result[0] = '无歌词'
+        if 'nolyric' not in jsonDate.keys():
+            try:
+                lyric = jsonDate['lrc']['lyric']
+            except KeyError:
+                lyric = None
+            try:
+                translatedLyric = jsonDate['tlyric']['lyric']
+            except KeyError:
+                translatedLyric = None
+
+            newL = splitTimeLrc(lyric)
+            newTL = splitTimeLrc(translatedLyric)
+            if newL is None:
+                result[0] = {'lrc': '无歌词', 'tlrc': ''}
+            else:
+                for timeItem in newL:
+                    l = newL[timeItem]
+                    if newTL is not None:
+                        try:
+                            tl = newTL[timeItem]
+                        except KeyError:
+                            tl = None
+                        result[timeItem] = {
+                            'lrc': l,
+                            'tlrc': tl
+                        }
+                    else:
+                        result[timeItem] = {
+                            'lrc': l,
+                            'tlrc': None
+                        }
         else:
-            for timeItem in newL:
-                l = newL[timeItem]
-                if newTL is not None:
-                    try:
-                        tl = newTL[timeItem]
-                    except KeyError:
-                        tl = None
-                    result[timeItem] = {
-                        'lrc': l,
-                        'tlrc': tl
-                    }
+            url = 'https://music.163.com/api/song/detail/' \
+                  '?id=' + str(self.currentSong) + '&ids=%5B' + str(self.currentSong) + '%5D'
+            jsonDate = requests.get(url, headers=headers)
+            jsonDate = json.loads(jsonDate.text)
+            songName = jsonDate['songs'][0]['name']
+            artists = jsonDate['songs'][0]['artists']
+            isStart = True
+            for artist in artists:
+                if isStart:
+                    songArtist = 'by: ' + artist['name']
                 else:
-                    result[timeItem] = {
-                        'lrc': l,
-                        'tlrc': None
-                    }
+                    songArtist = songArtist + ' / ' + artist['name']
+            result = {
+                0: {'lrc': songName, 'tlrc': ''},
+                999999999999: {'lrc': songArtist, 'tlrc': ''}
+            }
         keyTime = list(result.keys())
         self.currentSongLrc = result
         self.songLrcKeyTime = keyTime
@@ -414,9 +435,7 @@ class NeteaseMusicStatus():
                     except Exception:
                         pass
         else:
-            print('tttttttt', targetTime*1000)
             for timeItem in self.songLrcKeyTime:
-                print(timeItem)
                 if timeItem >= targetTime*1000:
                     break
             try:
@@ -427,9 +446,8 @@ class NeteaseMusicStatus():
                     self.nextLrc = self.currentSongLrc[self.nextLrcTime]
                 else:
                     self.nextLrcTime = None
-                    self.nextLrc = ''
+                    self.nextLrc = {'lrc': '', 'tlrc': ''}
                 self.currentLrc = self.currentSongLrc[self.currentLrcTime]
-                print(self.currentLrc)
             except Exception as e:
                 print(e)
 

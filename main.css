@@ -82,12 +82,13 @@ video {
 
 .netease {
 	width: 100%;
-	top:85%;
+	top:84%;
 	left:0%;
 	text-align:center;
 	position:absolute;
 	color:#fff;
 	transform: translate(0%,-50%);
+
 	z-index:90;
 	font-family:"微软雅黑","Microsoft Yahei";
 	font-size:50px;
@@ -95,11 +96,22 @@ video {
 }
 
 .lrc {
-    font-size:35px;
+    font-size:30px;
+    opacity:0.75;
 }
 
 .tlrc {
-    font-size:25px;
+    font-size:23px;
+    opacity:0.75;
+}
+.lrc2 {
+    font-size:26px;
+    opacity: 0.5;
+}
+
+.tlrc2 {
+    font-size:19px;
+    opacity: 0.5;
 }
 
 .loader, .loader .img, .loader .cycle, .loader .cycle2 {
