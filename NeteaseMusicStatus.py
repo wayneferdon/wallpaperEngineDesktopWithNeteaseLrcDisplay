@@ -28,7 +28,8 @@ import os
 # from Tail import Tail
 
 reg_url = "[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)"
-log_path = expanduser(r"C:\Users\WayneFerdon\AppData\Local\Netease\CloudMusic\cloudmusic.log")
+localAppdata = os.getenv("LOCALAPPDATA")
+log_path = expanduser(localAppdata + r"\Netease\CloudMusic\cloudmusic.log")
 
 
 def strLrc(text):
@@ -54,7 +55,7 @@ class NeteaseMusicStatus():
 
     def __init__(self):
         self.monitor_path = log_path
-        self.outPut_path = r'E:\SteamLibrary\steamapps\common\wallpaper_engine\projects\myprojects\bg2\outPut.html'
+        self.outPut_path = r'.\outPut.html'
         self.playState = 0
         """ platState:
             0   not playing
