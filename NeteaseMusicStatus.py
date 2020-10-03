@@ -73,15 +73,17 @@ class NeteaseMusicStatus():
 
         self.check_file_validity()
         self.try_count = 0
-        self.currentLrc = ''
-        self.currentTLrc = ''
-        self.nextLrc = ''
-        self.nextTLrc = ''
+        self.currentLrc = {'lrc': '', 'tlrc': ''}
+        self.currentTLrc = {'lrc': '', 'tlrc': ''}
+        self.nextLrc = {'lrc': '', 'tlrc': ''}
+        self.nextTLrc = {'lrc': '', 'tlrc': ''}
         self.currentLrcTime = 0
         self.nextLrcTime = 0
         self.songLrcKeyTime = []
         self.outPutLrc = ''
         self.initializing = True
+        print("----------------------")
+        print('start initializing')
 
         try:
             self.file_ = open(self.monitor_path, 'r', encoding='utf-8')
@@ -91,7 +93,7 @@ class NeteaseMusicStatus():
         except:
             raise
 
-        lineList = self.getLastLines(1000000)
+        lineList = self.getLastLines(100000)
         if lineList is not None:
             lll = len(lineList)
             lineIndex = -1
@@ -119,8 +121,7 @@ class NeteaseMusicStatus():
         print('current position: ', self.lastPosition)
         print('lastResumeTime: ', self.lastResumeTime)
         print('lastPauseTime: ', self.lastPauseTime)
-        print('end initializing')
-        print("----------------------")
+
         if self.currentSong:
             if self.playState == 1:
                 currentTime = time.time()
@@ -128,13 +129,19 @@ class NeteaseMusicStatus():
             else:
                 currentTimePosition = self.lastPosition
             self.getLrc()
+            print('end initializing')
+            print("----------------------")
             self.setCurrentLrc(currentTimePosition)
             print(self.currentLrc)
             print(self.currentTLrc)
             print(self.nextLrc)
             print(self.nextTLrc)
             self.outPutCurrentLrc()
+        else:
+            print('end initializing')
+            print("----------------------")
         self.initializing = False
+
 
 
 
@@ -198,13 +205,14 @@ class NeteaseMusicStatus():
                 playSong = re.split(',', logInfo)
                 playSong = re.split('_', playSong[2])
                 self.currentSong = playSong[0]
-                self.getLrc()
+                if not initializing:
+                    print('play')
+                    self.getLrc()
                 if self.playState != 2:
                     self.lastPosition = 0
                 self.playState = 0  # need to wait for load and resume
                 validInfo = 'play'
-                if not initializing:
-                    print('play')
+
             elif '__onAudioPlayerLoad' in logInfo:
                 songLength = re.split(',', logInfo)
                 songLength = eval("{" + songLength[4] + "}")
@@ -312,7 +320,7 @@ class NeteaseMusicStatus():
 
         outPutLrc = '<div class="lrc">' + currentL + '</div>' + \
                     '<div class="tlrc">' + currentTL + '</div>' + \
-                    '<div class="tlrc2">' + nextL + '</div>' + \
+                    '<div class="lrc2">' + nextL + '</div>' + \
                     '<div class="tlrc2">' + nextTL + '</div>'
         if outPutLrc != self.outPutLrc:
             with open(self.outPut_path, 'w', encoding='utf-8') as outPutFile:
@@ -359,10 +367,14 @@ class NeteaseMusicStatus():
                 except Exception as e:
                     pass
             return newList
+
+        user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+        headers = {'user-agent': user_agent}
+
         url = "http://music.163.com/api/song/lyric?id=" + str(self.currentSong) + "&lv=1&kv=1&tv=-1"
-        headers = {'user-agent': 'firefox'}
         jsonDate = requests.get(url, headers=headers)
         jsonDate = json.loads(jsonDate.text)
+        # print('js---------\n', jsonDate, '\njs end--------------')
         result = dict()
         if 'nolyric' not in jsonDate.keys():
             try:
@@ -397,21 +409,32 @@ class NeteaseMusicStatus():
                         }
         else:
             url = 'https://music.163.com/api/song/detail/' \
-                  '?id=' + str(self.currentSong) + '&ids=%5B' + str(self.currentSong) + '%5D'
+                  '?id=' + str(self.currentSong) + '&ids=[' + str(self.currentSong) + ']'
             jsonDate = requests.get(url, headers=headers)
             jsonDate = json.loads(jsonDate.text)
+            print(jsonDate)
             songName = jsonDate['songs'][0]['name']
             artists = jsonDate['songs'][0]['artists']
             isStart = True
             for artist in artists:
                 if isStart:
                     songArtist = 'by: ' + artist['name']
+                    isStart = False
                 else:
                     songArtist = songArtist + ' / ' + artist['name']
+            # url2 = 'https://music.163.com//song?id=' + str(self.currentSong)
+            # jsonDate2 = requests.get(url2, headers=headers)
+            # pattern = r'data-res-name=".*"\ndata-res-author=".*"'
+            # info = re.findall(pattern, jsonDate2.text)
+            # songName = re.findall(r'data-res-name=".*?"', info[0])
+            # songArtist = re.findall(r'data-res-author=".*?"', info[0])
+            # songName = songName[0].replace('data-res-name="', '').replace('"', '')
+            # songArtist = 'by: ' + songArtist[0].replace('data-res-author="', '').replace('"', '').replace('/', ' / ')
             result = {
                 0: {'lrc': songName, 'tlrc': ''},
                 999999999999: {'lrc': songArtist, 'tlrc': ''}
             }
+
         keyTime = list(result.keys())
         self.currentSongLrc = result
         self.songLrcKeyTime = keyTime
@@ -432,7 +455,7 @@ class NeteaseMusicStatus():
                             self.nextLrc = self.currentSongLrc[self.nextLrcTime]
                         else:
                             self.nextLrcTime = None
-                            self.nextLrc = ''
+                            self.nextLrc = {'lrc': '', 'tlrc': ''}
                     except Exception:
                         pass
         else:
@@ -461,4 +484,5 @@ if __name__ == '__main__':
             n.start()
         except Exception as e:
             # print(e)
+            n = NeteaseMusicStatus()
             pass

@@ -96,7 +96,7 @@ video {
 }
 
 .lrc {
-    font-size:30px;
+    font-size:35px;
     opacity:0.75;
 }
 
@@ -105,12 +105,12 @@ video {
     opacity:0.75;
 }
 .lrc2 {
-    font-size:26px;
+    font-size:25px;
     opacity: 0.5;
 }
 
 .tlrc2 {
-    font-size:19px;
+    font-size:16.25px;
     opacity: 0.5;
 }
 
