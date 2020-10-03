@@ -408,7 +408,7 @@ class NeteaseMusicStatus():
                         # lang = translator.detect(l)
                         result[timeItem] = {
                             'lrc': l,
-                            'tlrc': ''
+                            'tlrc': None
                         }
         else:
             url = 'https://music.163.com/api/song/detail/' \
@@ -437,8 +437,8 @@ class NeteaseMusicStatus():
                 0: {'lrc': songName, 'tlrc': ''},
                 999999999999: {'lrc': songArtist, 'tlrc': ''}
             }
-
         keyTime = list(result.keys())
+        keyTime.sort()
         self.currentSongLrc = result
         self.songLrcKeyTime = keyTime
 
