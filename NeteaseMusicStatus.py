@@ -18,6 +18,8 @@ import time
 import types
 import multiprocessing
 import os
+from googletrans import Translator
+
 # import win32api
 # import win32gui
 # ct = win32api.GetConsoleTitle()
@@ -403,9 +405,10 @@ class NeteaseMusicStatus():
                             'tlrc': tl
                         }
                     else:
+                        # lang = translator.detect(l)
                         result[timeItem] = {
                             'lrc': l,
-                            'tlrc': None
+                            'tlrc': ''
                         }
         else:
             url = 'https://music.163.com/api/song/detail/' \
@@ -479,6 +482,7 @@ class NeteaseMusicStatus():
 
 if __name__ == '__main__':
     n = NeteaseMusicStatus()
+    translator = Translator()
     while True:
         try:
             n.start()
