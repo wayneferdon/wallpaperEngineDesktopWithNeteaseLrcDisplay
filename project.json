@@ -499,7 +499,7 @@
 				"order" : 160.5,
 				"text" : "ui_color_blur",
 				"type" : "color",
-				"value" : "0.8 0.8 0.8"
+				"value" : "0.2 0.1568627450980392 0.18823529411764706"
 			},
 			"DateColor" :
 			{
@@ -515,7 +515,7 @@
 				"order" : 161,
 				"text" : "ui_time_date_format",
 				"type" : "textinput",
-				"value" : "{DD} {month} {YYYY}"
+				"value" : "{wek} {YYYY}. {MM}. {DD}."
 			},
 			"DateSize" :
 			{
@@ -525,7 +525,7 @@
 				"order" : 162,
 				"text" : "ui_size",
 				"type" : "slider",
-				"value" : 17
+				"value" : 16
 			},
 			"DateX" :
 			{
@@ -535,7 +535,7 @@
 				"order" : 163,
 				"text" : "ui_posX",
 				"type" : "slider",
-				"value" : 59
+				"value" : 63
 			},
 			"DateY" :
 			{
@@ -545,7 +545,7 @@
 				"order" : 164,
 				"text" : "ui_posY",
 				"type" : "slider",
-				"value" : 56
+				"value" : 74
 			},
 			"DefaultWallpaper" :
 			{
@@ -553,122 +553,14 @@
 				"options" :
 				[
 					{
-						"label" : "[UltraHD]Mountains",
+						"label" : "MHW",
 						"value" : 1
-					},
-					{
-						"label" : "[2K+]Mountains 2",
-						"value" : 2
-					},
-					{
-						"label" : "[UltraHD]Nier Automata",
-						"value" : 3
-					},
-					{
-						"label" : "[FullHD]The Older I Get",
-						"value" : 4
-					},
-					{
-						"label" : "[HHQ]Fern",
-						"value" : 5
-					},
-					{
-						"label" : "[UltraHD]Sky",
-						"value" : 6
-					},
-					{
-						"label" : "[UltraHD]Sky 2",
-						"value" : 7
-					},
-					{
-						"label" : "[FullHD]Nakano",
-						"value" : 8
-					},
-					{
-						"label" : "[UltraHD]Guns Girl",
-						"value" : 9
-					},
-					{
-						"label" : "[2K]桜 吹雪 の 中",
-						"value" : 10
-					},
-					{
-						"label" : "[2K]Wlop 1",
-						"value" : 11
-					},
-					{
-						"label" : "[4K]Wlop 2",
-						"value" : 12
-					},
-					{
-						"label" : "[2K]Wlop 3",
-						"value" : 13
-					},
-					{
-						"label" : "[UltraHD]Wlop 4",
-						"value" : 14
-					},
-					{
-						"label" : "[UltraHD]Wlop 5",
-						"value" : 15
-					},
-					{
-						"label" : "[FullHD]Wlop 6",
-						"value" : 16
-					},
-					{
-						"label" : "[FullHD]Wlop 7",
-						"value" : 17
-					},
-					{
-						"label" : "[UltraHD]Wlop 8",
-						"value" : 18
-					},
-					{
-						"label" : "[UltraHD]Wlop 9",
-						"value" : 19
-					},
-					{
-						"label" : "[UltraHD]Mountains 3",
-						"value" : 21
-					},
-					{
-						"label" : "[4K+]El Capitan",
-						"value" : 22
-					},
-					{
-						"label" : "[4K+]Forest",
-						"value" : 23
-					},
-					{
-						"label" : "[4K+]Forest 2",
-						"value" : 24
-					},
-					{
-						"label" : "[4K+]Landscape",
-						"value" : 25
-					},
-					{
-						"label" : "[4K+]Black Mountains",
-						"value" : 26
-					},
-					{
-						"label" : "[4K+]Black Mountains 2",
-						"value" : 27
-					},
-					{
-						"label" : "[4K+]Landscape 2",
-						"value" : 28
-					},
-					{
-						"label" : "[4K+]Forest 3",
-						"value" : 29
 					}
 				],
 				"order" : 11.5,
 				"text" : "ui_background_mode_stand",
 				"type" : "combo",
-				"value" : 2
+				"value" : 1
 			},
 			"GlitchBG" :
 			{
@@ -994,7 +886,7 @@
 				"order" : 155.59999999999999,
 				"text" : "ui_color_blur",
 				"type" : "color",
-				"value" : "0.8 0.8 0.8"
+				"value" : "0.23137254901960785 0.19607843137254902 0.22745098039215686"
 			},
 			"TimeColor" :
 			{
@@ -1390,7 +1282,7 @@
 				"order" : 160.16,
 				"text" : "ui_transparency",
 				"type" : "slider",
-				"value" : 80
+				"value" : 65
 			},
 			"direction" :
 			{
@@ -1611,7 +1503,7 @@
 				"order" : 50,
 				"text" : "ui_transparency",
 				"type" : "slider",
-				"value" : 100
+				"value" : 24
 			},
 			"monstercat_reverse" :
 			{
@@ -1629,7 +1521,7 @@
 				"order" : 43,
 				"text" : "ui_smash",
 				"type" : "slider",
-				"value" : 3
+				"value" : 2
 			},
 			"monstercat_xPos" :
 			{
@@ -1649,7 +1541,7 @@
 				"order" : 48,
 				"text" : "ui_posY",
 				"type" : "slider",
-				"value" : 97
+				"value" : 100
 			},
 			"noteAlignment" :
 			{
@@ -1833,7 +1725,7 @@
 				"order" : 33.5,
 				"text" : "ui_color",
 				"type" : "color",
-				"value" : "1 1 1"
+				"value" : "0.5725490196078431 0.37254901960784315 0.2980392156862745"
 			},
 			"particles_direction_x" :
 			{
@@ -1843,7 +1735,7 @@
 				"order" : 35,
 				"text" : "ui_dir_x",
 				"type" : "slider",
-				"value" : 0
+				"value" : 100
 			},
 			"particles_direction_y" :
 			{
@@ -1964,7 +1856,7 @@
 				"order" : 34.909999999999997,
 				"text" : "ui_effect_parcticl_music_speed",
 				"type" : "bool",
-				"value" : false
+				"value" : true
 			},
 			"particles_musicStrengh" :
 			{
@@ -1974,7 +1866,7 @@
 				"order" : 34.920000000000002,
 				"text" : "ui_effect_parcticl_music_strengh",
 				"type" : "slider",
-				"value" : 50
+				"value" : 100
 			},
 			"particles_musicTone" :
 			{
@@ -2001,7 +1893,7 @@
 				"order" : 34.914999999999999,
 				"text" : "ui_effect_parcticl_music_tone",
 				"type" : "combo",
-				"value" : 1
+				"value" : 4
 			},
 			"particles_number" :
 			{
@@ -2011,7 +1903,7 @@
 				"order" : 33.200000000000003,
 				"text" : "ui_count",
 				"type" : "slider",
-				"value" : 700
+				"value" : 200
 			},
 			"particles_opacity" :
 			{
@@ -2021,7 +1913,7 @@
 				"order" : 33.299999999999997,
 				"text" : "ui_transparency",
 				"type" : "slider",
-				"value" : 75
+				"value" : 85
 			},
 			"particles_opacityRandom" :
 			{
@@ -2047,7 +1939,7 @@
 				"order" : 33.600000000000001,
 				"text" : "ui_color_blur",
 				"type" : "color",
-				"value" : "1 1 1"
+				"value" : "0.5725490196078431 0.37254901960784315 0.2980392156862745"
 			},
 			"particles_shapeType" :
 			{
@@ -2100,7 +1992,7 @@
 				"order" : 34,
 				"text" : "ui_effect_parcticl_size",
 				"type" : "slider",
-				"value" : 2
+				"value" : 11
 			},
 			"particles_speed" :
 			{
@@ -2110,7 +2002,7 @@
 				"order" : 34.799999999999997,
 				"text" : "ui_effect_parcticl_speed",
 				"type" : "slider",
-				"value" : 5
+				"value" : 8
 			},
 			"particles_speedRandom" :
 			{
@@ -3233,7 +3125,7 @@
 				"order" : 158,
 				"text" : "ui_time_sec",
 				"type" : "bool",
-				"value" : false
+				"value" : true
 			},
 			"tSize" :
 			{
@@ -3261,7 +3153,7 @@
 				"order" : 159,
 				"text" : "ui_posX",
 				"type" : "slider",
-				"value" : 50
+				"value" : 52.45
 			},
 			"tY" :
 			{
@@ -3271,7 +3163,7 @@
 				"order" : 160,
 				"text" : "ui_posY",
 				"type" : "slider",
-				"value" : 50
+				"value" : 67
 			},
 			"timeType" :
 			{
@@ -3308,7 +3200,7 @@
 				"order" : 155.30000000000001,
 				"text" : "ui_transparency",
 				"type" : "slider",
-				"value" : 100
+				"value" : 75
 			},
 			"videomodel" :
 			{
@@ -3672,9 +3564,9 @@
 		},
 		"supportsaudioprocessing" : true
 	},
-	"preview" : "preview.jpg",
+	"preview" : ".\\Default Content\\imgs\\1.jpg",
 	"tags" : [ "Relaxing" ],
-	"title" : "bg",
+	"title" : "MHW",
 	"type" : "web",
 	"version" : 3,
 	"visibility" : "public",
