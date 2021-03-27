@@ -84,8 +84,8 @@ class NeteaseMusicStatus():
         self.songLrcKeyTime = []
         self.outPutLrc = ''
         self.initializing = True
-        print("----------------------")
-        print('start initializing')
+        # print("----------------------")
+        # print('start initializing')
 
         try:
             self.file_ = open(self.monitor_path, 'r', encoding='utf-8')
@@ -95,7 +95,7 @@ class NeteaseMusicStatus():
         except:
             raise
 
-        lineList = self.getLastLines(100000)
+        lineList = self.getLastLines(1000000)
         if lineList is not None:
             lll = len(lineList)
             lineIndex = -1
@@ -108,6 +108,7 @@ class NeteaseMusicStatus():
                     lineItem = lineItem.decode('utf-8')
 
                     try:
+                        # print(lineItem)
                         self.callback_log(lineItem, self.initializing)
                     except:
                         pass
@@ -116,13 +117,13 @@ class NeteaseMusicStatus():
         with open(self.outPut_path, 'w', encoding='utf-8') as outPutFile:
             outPutFile.write('')
 
-        print('time: ', self.last_update)
-        print('song id:', self.currentSong)
-        print('state: ', self.playState)
-        print('length: ', self.currentSongLength)
-        print('current position: ', self.lastPosition)
-        print('lastResumeTime: ', self.lastResumeTime)
-        print('lastPauseTime: ', self.lastPauseTime)
+        # print('time: ', self.last_update)
+        # print('song id:', self.currentSong)
+        # print('state: ', self.playState)
+        # print('length: ', self.currentSongLength)
+        # print('current position: ', self.lastPosition)
+        # print('lastResumeTime: ', self.lastResumeTime)
+        # print('lastPauseTime: ', self.lastPauseTime)
 
         if self.currentSong:
             if self.playState == 1:
@@ -131,17 +132,17 @@ class NeteaseMusicStatus():
             else:
                 currentTimePosition = self.lastPosition
             self.getLrc()
-            print('end initializing')
-            print("----------------------")
+            # print('end initializing')
+            # print("----------------------")
             self.setCurrentLrc(currentTimePosition)
-            print(self.currentLrc)
-            print(self.currentTLrc)
-            print(self.nextLrc)
-            print(self.nextTLrc)
+            # print(self.currentLrc)
+            # print(self.currentTLrc)
+            # print(self.nextLrc)
+            # print(self.nextTLrc)
             self.outPutCurrentLrc()
-        else:
-            print('end initializing')
-            print("----------------------")
+        # else:
+            # print('end initializing')
+            # print("----------------------")
         self.initializing = False
 
 
@@ -167,7 +168,7 @@ class NeteaseMusicStatus():
                     lines = fp.readlines()
                     return lines
         except FileNotFoundError:
-            print(filePath + ' not found!')
+            # print(filePath + ' not found!')
             return None, False
 
 
@@ -175,6 +176,8 @@ class NeteaseMusicStatus():
         """ Reload tailed file when it be empty be `echo "" > tailed file`, or
             segmentated by logrotate.
         """
+		# try:
+		# 	self.file_.
         try:
             self.file_ = open(self.monitor_path, "rb")
             self.size = os.path.getsize(self.monitor_path)
@@ -193,8 +196,8 @@ class NeteaseMusicStatus():
             self.playState = 2
             logTime = time.time()
             validInfo = 'exit'
-            if not initializing:
-                print('app exit')
+            # if not initializing:
+                # print('app exit')
 
         elif "[info]" in content:
             content = content.strip().strip('\n')
@@ -208,7 +211,7 @@ class NeteaseMusicStatus():
                 playSong = re.split('_', playSong[2])
                 self.currentSong = playSong[0]
                 if not initializing:
-                    print('play')
+                    # print('play')
                     self.getLrc()
                 if self.playState != 2:
                     self.lastPosition = 0
@@ -220,8 +223,8 @@ class NeteaseMusicStatus():
                 songLength = eval("{" + songLength[4] + "}")
                 self.currentSongLength = songLength['duration']
                 validInfo = 'load'
-                if not initializing:
-                    print('load')
+                # if not initializing:
+                    # print('load')
             elif '_$setPosition' in logInfo:
                 position = re.split(',', logInfo)
                 position = position[2].replace(' ', '')
@@ -233,22 +236,22 @@ class NeteaseMusicStatus():
                         self.lastResumeTime = logTime
                     else:
                         self.lastResumeTime = time.time()
-                if not initializing:
-                    print('setPosition')
+                # if not initializing:
+                    # print('setPosition')
             elif 'player._$resume do' in logInfo:
                 self.playState = 1
                 self.lastResumeTime = logTime
                 validInfo = 'resume'
-                if not initializing:
-                    print('resume')
+                # if not initializing:
+                    # print('resume')
             elif 'player._$pause do' in logInfo:
                 validInfo = 'pause'
                 if self.playState == 1:
                     self.playState = 0
                     self.lastPosition = logTime - self.lastResumeTime + self.lastPosition
                     self.lastPauseTime = logTime
-                if not initializing:
-                    print('pause')
+                # if not initializing:
+                    # print('pause')
 
         if validInfo:
             if initializing and self.currentSong and self.playState and self.currentSongLength and self.lastPosition:
@@ -256,19 +259,19 @@ class NeteaseMusicStatus():
             # elif not initializing:
             self.last_update = logTime
             if not initializing:
-                print('time: ', self.last_update)
-                if validInfo == 'load':
-                    print('song id:', self.currentSong)
-                    print('length: ', self.currentSongLength)
-                if validInfo in ['play', 'resume', 'pause', 'exit']:
-                    print('state: ', self.playState)
-                if validInfo in ['play', 'resume', 'pause', 'exit', 'setPosition']:
-                    print('current position: ', self.lastPosition)
-                if validInfo == 'resume':
-                    print('lastResumeTime: ', self.lastResumeTime)
-                if validInfo == 'pause':
-                    print('lastPauseTime: ', self.lastPauseTime)
-                print("----------------------")
+                # print('time: ', self.last_update)
+                # if validInfo == 'load':
+                    # print('song id:', self.currentSong)
+                    # print('length: ', self.currentSongLength)
+                # if validInfo in ['play', 'resume', 'pause', 'exit']:
+                    # print('state: ', self.playState)
+                # if validInfo in ['play', 'resume', 'pause', 'exit', 'setPosition']:
+                    # print('current position: ', self.lastPosition)
+                # if validInfo == 'resume':
+                    # print('lastResumeTime: ', self.lastResumeTime)
+                # if validInfo == 'pause':
+                    # print('lastPauseTime: ', self.lastPauseTime)
+                # print("----------------------")
                 if validInfo in ['setPosition', 'resume']:
                     self.setCurrentLrc(self.lastPosition)
                     self.outPutCurrentLrc()
@@ -279,7 +282,7 @@ class NeteaseMusicStatus():
 
     def start(self, interval=0.001):
         """ Do a tail follow. If a callback function is registered it is called with every new line.
-        Else printed to standard out.
+        Else # printed to standard out.
 
         Arguments:
             interval - Number of seconds to wait between each iteration; Defaults to 1. """
@@ -327,7 +330,7 @@ class NeteaseMusicStatus():
         if outPutLrc != self.outPutLrc:
             with open(self.outPut_path, 'w', encoding='utf-8') as outPutFile:
                 outPutFile.write(outPutLrc)
-            print(self.nextLrc)
+            # print(self.nextLrc)
             self.outPutLrc = outPutLrc
 
     def check_file_validity(self):
@@ -338,11 +341,14 @@ class NeteaseMusicStatus():
         """
         file = self.monitor_path
         if not os.path.isfile(file):
-            raise TailError("File '%s' does not exist" % (file))
+            # raise TailError("File '%s' does not exist" % (file))
+            pass
         if not os.access(file, os.R_OK):
-            raise TailError("File '%s' not readable" % (file))
+            # raise TailError("File '%s' not readable" % (file))
+            pass
         if os.path.isdir(file):
-            raise TailError("File '%s' is a directory" % (file))
+            # raise TailError("File '%s' is a directory" % (file))
+            pass
 
     def getLrc(self):
         def splitTimeLrc(lrcList):
@@ -415,7 +421,7 @@ class NeteaseMusicStatus():
                   '?id=' + str(self.currentSong) + '&ids=[' + str(self.currentSong) + ']'
             jsonDate = requests.get(url, headers=headers)
             jsonDate = json.loads(jsonDate.text)
-            print(jsonDate)
+            # print(jsonDate)
             songName = jsonDate['songs'][0]['name']
             artists = jsonDate['songs'][0]['artists']
             isStart = True
@@ -477,6 +483,7 @@ class NeteaseMusicStatus():
                 self.currentLrc = self.currentSongLrc[self.currentLrcTime]
             except Exception as e:
                 print(e)
+                pass
 
 
 
