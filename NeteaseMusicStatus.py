@@ -464,7 +464,7 @@ class NeteaseMusicStatus():
                 for timeItem in newL:
                     l = newL[timeItem]
                     if self.isContainNihonngo(lyric):
-                        l = l.replace(" ", "")
+                        l = l.replace(" ", "　")
                         lS = self.wakatiConv.do(l)
                         lSplitedList = lS.split(" ")
                         lConv = ""
