@@ -18,7 +18,8 @@ import time
 import types
 import multiprocessing
 import os
-from googletrans import Translator
+from pykakasi import kakasi, wakati
+
 
 # import win32api
 # import win32gui
@@ -40,6 +41,45 @@ def strLrc(text):
     else:
         return text
 
+
+def is_cjk(char):
+    ranges = [
+        {"from": ord(u"\u3300"), "to": ord(u"\u33ff")},  # compatibility ideographs
+        {"from": ord(u"\ufe30"), "to": ord(u"\ufe4f")},  # compatibility ideographs
+        {"from": ord(u"\uf900"), "to": ord(u"\ufaff")},  # compatibility ideographs
+        {"from": ord(u"\U0002F800"), "to": ord(u"\U0002fa1f")},  # compatibility ideographs
+        {"from": ord(u"\u30a0"), "to": ord(u"\u30ff")},  # Japanese Kana
+        {"from": ord(u"\u2e80"), "to": ord(u"\u2eff")},  # cjk radicals supplement
+        {"from": ord(u"\u4e00"), "to": ord(u"\u9fff")},
+        {"from": ord(u"\u3400"), "to": ord(u"\u4dbf")},
+        {"from": ord(u"\U00020000"), "to": ord(u"\U0002a6df")},
+        {"from": ord(u"\U0002a700"), "to": ord(u"\U0002b73f")},
+        {"from": ord(u"\U0002b740"), "to": ord(u"\U0002b81f")},
+        {"from": ord(u"\U0002b820"), "to": ord(u"\U0002ceaf")}  # included as of Unicode 8.0
+    ]
+    return any([range["from"] <= ord(char) <= range["to"] for range in ranges])
+
+
+def cjk_substrings(string):
+    i = 0
+    while i < len(string):
+        if is_cjk(string[i]):
+            start = i
+            while is_cjk(string[i]):
+                i += 1
+                if i >= len(string):
+                    break
+            yield string[start:i]
+        i += 1
+
+
+def kanjiSplite(string):
+    for sub in cjk_substrings(string):
+        string = string.replace(sub, "//splite//" + sub + "//splite//")
+    stringList = string.split("//splite//")
+    if "" in stringList:
+        removeAll(stringList, "")
+    return stringList
 
 
 class TailError(Exception):
@@ -86,6 +126,9 @@ class NeteaseMusicStatus():
         self.initializing = True
         # print("----------------------")
         # print('start initializing')
+        self.kakasi = kakasi()
+        self.wakati = wakati()
+        self.wakatiConv = self.wakati.getConverter()
 
         try:
             self.file_ = open(self.monitor_path, 'r', encoding='utf-8')
@@ -145,6 +188,14 @@ class NeteaseMusicStatus():
             # print("----------------------")
         self.initializing = False
 
+    def kakasiConver(self, source, mode):
+        self.kakasi.setMode("H", mode)  # Hiragana to ascii, default: no conversion
+        self.kakasi.setMode("K", mode)  # Katakana to ascii, default: no conversion
+        self.kakasi.setMode("J", mode)  # Japanese to ascii, default: no conversion
+        self.kakasi.setMode("s", True)  # add space, default: no separator
+        self.kakasi.setMode("C", True)  # capitalize, default: no capitalize
+        self.kaksiConv = self.kakasi.getConverter()
+        return self.kaksiConv.do(source)
 
 
 
@@ -350,6 +401,16 @@ class NeteaseMusicStatus():
             # raise TailError("File '%s' is a directory" % (file))
             pass
 
+    def isContainNihonngo(self, source):
+        p = re.compile('[\u0800-\u4e00]')
+        searchResult = p.findall(source)
+        # print(searchResult)
+        searchResult = removeAll(searchResult, '一')
+        # print(searchResult)
+        if searchResult:
+            return True
+        return False
+
     def getLrc(self):
         def splitTimeLrc(lrcList):
             if lrcList is None:
@@ -387,6 +448,7 @@ class NeteaseMusicStatus():
         if 'nolyric' not in jsonDate.keys():
             try:
                 lyric = jsonDate['lrc']['lyric']
+
             except KeyError:
                 lyric = None
             try:
@@ -401,21 +463,85 @@ class NeteaseMusicStatus():
             else:
                 for timeItem in newL:
                     l = newL[timeItem]
+                    if self.isContainNihonngo(lyric):
+                        l = l.replace(" ", "")
+                        lS = self.wakatiConv.do(l)
+                        lSplitedList = lS.split(" ")
+                        lConv = ""
+                        for lSplited in lSplitedList:
+                            if "　" in lSplited:
+                                lSplited = lSplited.replace("　", "//split//　//split//")
+                                lSplited = lSplited.split("//split//")
+                            if isinstance(lSplited, list):
+                                for item in lSplited:
+                                    lSplitedH = self.kakasiConver(item, "H")
+                                    if lSplitedH != item:
+                                        tempList_lH = list(lSplitedH)
+                                        tempList_l = list(item)
+                                        end = list()
+                                        for i in range(len(tempList_l)):
+                                            if tempList_lH[-(i + 1)] == tempList_l[-(i + 1)]:
+                                                end.append(tempList_l[-(i + 1)])
+                                                tempList_lH[-(i + 1)] = ""
+                                                tempList_l[-(i + 1)] = ""
+                                            else:
+                                                break
+                                        removeAll(tempList_l, "")
+                                        removeAll(tempList_lH, "")
+                                        tempString = ""
+                                        for string in tempList_l:
+                                            tempString = tempString + string
+                                        tempString = tempString + "("
+                                        for string in tempList_lH:
+                                            tempString = tempString + string
+                                        tempString = tempString + ")"
+                                        for string in end:
+                                            tempString = tempString + string
+                                    lConv = lConv + " " + item
+                            else:
+                                lSplitedH = self.kakasiConver(lSplited, "H")
+                                lSplitedH = lSplitedH.replace(" ", "")
+                                if lSplitedH != lSplited:
+                                    tempList_lH = list(lSplitedH)
+                                    tempList_l = list(lSplited)
+                                    end = list()
+                                    for i in range(len(tempList_l)):
+                                        if tempList_lH[-(i+1)] == tempList_l[-(i+1)]:
+                                            end.append(tempList_l[-(i+1)])
+                                            tempList_lH[-(i+1)] = ""
+                                            tempList_l[-(i+1)] = ""
+                                        else:
+                                            break
+                                    removeAll(tempList_l, "")
+                                    removeAll(tempList_lH, "")
+                                    tempString = ""
+                                    for string in tempList_l:
+                                        tempString = tempString + string
+                                    tempString = tempString + "("
+                                    for string in tempList_lH:
+                                        tempString = tempString + string
+                                    tempString = tempString + ")"
+                                    for string in end:
+                                        tempString = tempString + string
+                                    lSplited = tempString
+                                lConv = lConv + " " + lSplited
+                        lR = self.kakasiConver(l, "a")
+                        l = lConv
                     if newTL is not None:
                         try:
                             tl = newTL[timeItem]
                         except KeyError:
                             tl = None
-                        result[timeItem] = {
-                            'lrc': l,
-                            'tlrc': tl
-                        }
-                    else:
-                        # lang = translator.detect(l)
-                        result[timeItem] = {
-                            'lrc': l,
-                            'tlrc': None
-                        }
+                    if self.isContainNihonngo(lyric):
+                        if not tl is None:
+                            tl = tl + "/" + lR
+                        else:
+                            tl = lR
+                    result[timeItem] = {
+                        'lrc': l,
+                        'tlrc': tl
+                    }
+
         else:
             url = 'https://music.163.com/api/song/detail/' \
                   '?id=' + str(self.currentSong) + '&ids=[' + str(self.currentSong) + ']'
@@ -482,14 +608,17 @@ class NeteaseMusicStatus():
                     self.nextLrc = {'lrc': '', 'tlrc': ''}
                 self.currentLrc = self.currentSongLrc[self.currentLrcTime]
             except Exception as e:
-                print(e)
+                # print(e)
                 pass
 
+def removeAll(source, target):
+    while target in source:
+        source.remove(target)
+    return source
 
 
 if __name__ == '__main__':
     n = NeteaseMusicStatus()
-    translator = Translator()
     while True:
         try:
             n.start()
